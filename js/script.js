@@ -18,7 +18,7 @@ const rightBtn = document.querySelector(".slaider_btn_right");
 const first = document.querySelector(".one");
 const second = document.querySelector(".two");
 const third = document.querySelector(".three");
-const slaiderWidth = 500;
+const slaiderWidth = 100;
 const slaiderSpeed = 5000;
 
 panels.forEach((panel, index) => {
@@ -73,7 +73,7 @@ const changeContent = () => {
     index = slaiderContent.length - 1;
   }
 
-  slaiderBox.style.transform = `translateX(${index * slaiderWidth}px)`;
+  slaiderBox.style.transform = `translateX(${index * slaiderWidth}%)`;
 };
 
 const handleRightButton = () => {
