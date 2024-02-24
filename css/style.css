@@ -53,15 +53,19 @@ a:hover {
   color: #ebaf77;
 }
 .logo_nav_container {
-  margin-top: 3.25%;
-  background-color: #ebaf77;
-  color: #171616;
-}
-.logo_nav_container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 3%;
+  background-color: #ebaf77;
+  color: #171616;
 }
+@media (min-width: 1800px) {
+  .logo_nav_container {
+    margin-top: 2.5%;
+  }
+}
+
 .logo_header {
   margin-left: 5%;
   transition: all 0.5s;
