@@ -94,17 +94,26 @@ a:hover {
 .google_opinion-slaider {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   width: 40%;
   margin: 0 auto;
+  padding: 5% 0;
 }
+.google_opinion-slaider-bar {
+  background-color: #dbad81;
+  width: 100%;
+}
+.main_page-header3 {
+  font-size: 1.75em;
+  text-align: center;
+  padding: 0.2rem 0;
+}
+
 .logo_google {
-  width: 80%;
+  width: 70%;
 }
-.flex {
-  display: flex;
-}
+
 .slaider {
   overflow: hidden;
   position: relative;
@@ -192,13 +201,13 @@ a:hover {
 }
 
 .end_header_bar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
   background-color: #dbad81;
+  padding: 0.2rem 0;
 }
 .home_h1 {
-  font-size: 24px;
+  font-size: 2.25em;
+  text-align: center;
 }
 .primary_container_wrapper {
   display: flex;
@@ -242,12 +251,12 @@ a:hover {
   }
 }
 .head_content_welcome-h2 {
-  font-size: 22px;
+  font-size: 2rem;
   display: block;
   text-align: center;
 }
 .head_content-h2 {
-  font-size: 22px;
+  font-size: 2rem;
   display: none;
   text-align: center;
 }
