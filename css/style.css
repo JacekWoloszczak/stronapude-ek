@@ -232,7 +232,7 @@ a:hover {
   color: red;
 }
 .benefit_item:hover::before {
-  content: url("assets/check_icon.png");
+  content: url("../assets/check_icon.png");
 }
 .picture_list {
   list-style-type: none;
@@ -407,19 +407,19 @@ a:hover {
   transition: flex 0.7s ease-in;
 }
 .img_card_start {
-  background-image: url("assets/canva-cardboard-boxes-as-packaging-MAEudhbTn7g.png");
+  background-image: url("../assets/canva-cardboard-boxes-as-packaging-MAEudhbTn7g.png");
   background-size: cover;
   background-position: 40%;
   background-repeat: no-repeat;
 }
 .img_card_first {
-  background-image: url("assets/zot-o-nas.webp");
+  background-image: url("../assets/zot-o-nas.webp");
   background-size: cover;
   background-position: 40%;
   background-repeat: no-repeat;
 }
 .img_card_second {
-  background-image: url("assets/zot-oferta.webp");
+  background-image: url("../assets/zot-oferta.webp");
   background-size: cover;
   background-position: 40%;
   background-repeat: no-repeat;
