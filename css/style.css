@@ -232,7 +232,7 @@ a:hover {
   color: red;
 }
 .benefit_item:hover::before {
-  content: url("..assets/check_icon.png");
+  content: url("../assets/check_icon.png");
 }
 .picture_list {
   list-style-type: none;
