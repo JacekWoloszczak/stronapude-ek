@@ -413,13 +413,13 @@ a:hover {
   background-repeat: no-repeat;
 }
 .img_card_first {
-  background-image: url("..assets/zot-o-nas.webp");
+  background-image: url("../assets/zot-o-nas.webp");
   background-size: cover;
   background-position: 40%;
   background-repeat: no-repeat;
 }
 .img_card_second {
-  background-image: url("..assets/zot-oferta.webp");
+  background-image: url("../assets/zot-oferta.webp");
   background-size: cover;
   background-position: 40%;
   background-repeat: no-repeat;
