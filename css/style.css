@@ -396,7 +396,6 @@ a:hover {
 }
 
 .card {
-  background-color: #171616;
   height: 60vh;
   border-radius: 50px;
   color: white;
@@ -407,7 +406,7 @@ a:hover {
   transition: flex 0.7s ease-in;
 }
 .img_card_start {
-  background-image: url("..assets/canva-cardboard-boxes-as-packaging-MAEudhbTn7g.png");
+  background-image: url("../assets/canva-cardboard-boxes-as-packaging-MAEudhbTn7g.png");
   background-size: cover;
   background-position: 40%;
   background-repeat: no-repeat;
