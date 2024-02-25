@@ -404,6 +404,7 @@ a:hover {
   margin: 10px;
   position: relative;
   transition: flex 0.7s ease-in;
+  box-shadow: 2px 2px 2px grey;
 }
 .img_card_start {
   background-image: url("../assets/canva-cardboard-boxes-as-packaging-MAEudhbTn7g.png");
