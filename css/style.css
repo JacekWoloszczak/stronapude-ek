@@ -581,13 +581,13 @@ a:hover {
 }
 .signup_checbox {
   position: absolute;
-  top: 77%;
+  top: 78%;
   left: 2%;
 }
 
 .label_paragraph {
   position: absolute;
-  top: 73.6%;
+  top: 74%;
   left: 5%;
 }
 @media screen and (min-width: 1800px) {
