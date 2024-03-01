@@ -164,8 +164,11 @@ a:hover {
   font-size: 1.75em;
   text-align: center;
   padding-bottom: 10%;
+  /* font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+} */
 }
-
 .logo_google {
   width: 60%;
 }
@@ -454,6 +457,7 @@ a:hover {
 }
 .form-bar_text {
   cursor: pointer;
+  text-transform: uppercase;
 }
 .form_bar_link {
   color: black;
