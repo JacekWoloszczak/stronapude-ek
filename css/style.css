@@ -139,7 +139,9 @@ a:hover {
     opacity: 1;
   }
 }
-
+.span_animated::before {
+  content: url("../assets/check_icon.png");
+}
 .google_opinion-slaider {
   display: flex;
 
@@ -224,6 +226,10 @@ a:hover {
   font-size: 1.8em;
   line-height: 3;
   margin-bottom: 22%;
+
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 .benefit_item {
   cursor: pointer;
