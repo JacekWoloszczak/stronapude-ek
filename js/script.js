@@ -1,9 +1,23 @@
 const container = document.querySelector(".span_we_are_here");
 const hideMap = document.querySelector(".wrapper_map_container");
+const allItems = document.querySelectorAll("div");
 
-container.addEventListener("click", () => {
-  hideMap.classList.toggle("is-visibility");
-});
+const hide = (e) => {
+  container.addEventListener("click", () => {
+    hideMap.classList.toggle("is-visibility");
+  });
+};
+
+function windowsClose() {
+  hideMap.classList.remove("is-visibility");
+}
+
+const openMap = (e) => {
+  if (e.target.classList.contains("span_we_are_here")) {
+    hideMap.classList.toggle("is-visibility");
+  } else windowsClose();
+};
+window.addEventListener("click", openMap);
 
 const panels = document.querySelectorAll(".card");
 const text = document.querySelector(".content");
