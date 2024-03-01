@@ -109,13 +109,16 @@ formButtonExit.addEventListener("click", (e) => {
 const form = document.querySelector("#contactForm");
 const fields = form.querySelectorAll("[required]");
 const formMessage = form.querySelector(".form-message");
-
+const url = "send-script.php";
 form.setAttribute("novalidate", true);
 
 for (const field of fields) {
   field.addEventListener("input", () =>
     field.classList.toggle("is-invalid", !field.checkValidity())
   );
+}
+function showSubmitError() {
+  formMessage.innerHTML = "Wysłanie wiadomości się nie powiodło";
 }
 
 function showSubmitSuccess() {
@@ -143,20 +146,6 @@ function checkRequiredFields() {
   return formErrors;
 }
 
-async function makeRequest(data) {
-  const res = await fetch(url, {
-    method: "post",
-    body: data,
-  });
-  if (res.ok) {
-    return res.json();
-  }
-  return Promise.reject(`${res.status}: ${res.statusText}`);
-}
-function showSubmitError() {
-  formMessage.innerHTML = "Wysłanie wiadomości się nie powiodło";
-}
-
 function afterSubmit(res) {
   if (res.errors) {
     const selectors = res.errors.map((el) => `[name="${el}"]`);
@@ -173,7 +162,17 @@ function afterSubmit(res) {
     }
   }
 }
-async function submitForm(e) {
+async function makeRequest(data) {
+  const res = await fetch(url, {
+    method: "post",
+    body: data,
+  });
+  if (res.ok) {
+    return res.json();
+  }
+  return Promise.reject(`${res.status}: ${res.statusText}`);
+}
+async function submitForm() {
   let formErrors = checkRequiredFields();
 
   if (!formErrors) {
