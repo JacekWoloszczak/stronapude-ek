@@ -147,7 +147,7 @@ a:hover {
   align-items: center;
   width: 100%;
 
-  padding: 5% 0;
+  padding: 10% 0;
 }
 .google_opinion-wrapper {
   width: 50%;
@@ -161,7 +161,7 @@ a:hover {
 .main_page-header3 {
   font-size: 1.75em;
   text-align: center;
-  padding: 0.2rem 0;
+  padding-bottom: 10%;
 }
 
 .logo_google {
@@ -326,8 +326,8 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 10%;
+  padding-bottom: 15%;
 
   /* background-image: url("../assets/tektura-pionowe-linie-wzoru.jpg"); */
   /* background-repeat: no-repeat;
