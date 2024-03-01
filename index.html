@@ -124,53 +124,6 @@
             <img src="assets/baner-pudelka.png" alt=" obraz z pudełkami" />
           </picture>
         </div>
-        <!-- <div class="google_opinion-slaider">
-          <img
-            class="logo_google"
-            src="assets/Logo Google-z-gwiazdkami.webp"
-            width="400"
-            height="150"
-            alt="logo Google"
-          />
-          <div class="slaider">
-            <div class="slaider_opinion">
-              <img
-                class="slaider_img"
-                class="slaider_content"
-                src="/assets/tekst-1.png"
-                width="400"
-                height="120"
-                alt=""
-              />
-
-              <img
-                class="slaider_img"
-                class="slaider_content"
-                src="assets/tekst-2.png"
-                width="400"
-                height="120"
-                alt=""
-              />
-
-              <!-- <p>
-              Jestem bardzo pozytywnie zaskoczony. Potrzebowałem na szybko 15
-              pudełek kartonowych w dość nietypowym wymiarze. Zamówienie mogłem
-              odebrać w rekordowo szybkim czasie, bo już następnego dnia. Bardzo
-              dziękuje:) Jacek W
-            </p>
-
-            <p>
-              Szukałem pudeł w okolicach Łomianek, bo potrzebowałem na już. W
-              środę zadzwoniłem, Pan podał wymiary jakie może zrobić od ręki i w
-              czwartek rano już odebrałem. Pudełka bardzo solidne, wypchane po
-              brzegi szkłem i porcelana. Noszone po schodach i wytrwały. Z
-              czystym sumieniem polecam Zakład Opakowań Tekturowych. Michał Z.
-            </p> -->
-        <!-- </div>
-            <button class="slaider_btn_left"><span>&lt;</span></button>
-            <button class="slaider_btn_right"><span>&gt;</span></button>
-          </div>
-        </div> -->
       </div>
       <div class="end_header_bar">
         <h1 class="home_h1">
@@ -358,14 +311,80 @@
           </ul>
         </div>
       </div>
-
-      <div class="form-bar">
-        <p>formularz kontaktowy</p>
-        <p>
-          <a class="form_bar_link" href="tel:227511370"
-            >telefon: 22 751 13 70</a
+      <div class="backdrop_formular-contact">
+        <fieldset class="fieldset_contact-form">
+          <legend>FORMULARZ KONTAKTOWY</legend>
+          <button type="button" title="przycisk wyjścia" class="form_exit-btn">
+            <svg width="28" height="28" class="form_exit">
+              <use
+                class="page-form_exit-icon"
+                href="./assets/icons.svg#icon-x-symbol-svgrepo-com"
+              ></use>
+            </svg>
+          </button>
+          <form
+            class="form"
+            id="contactForm"
+            method="post"
+            action="./send-script.php"
           >
-        </p>
+            <div class="form-row">
+              <label for="name" class="form-label">Imię</label>
+              <input
+                class="form-control"
+                type="text"
+                name="name"
+                required
+                id="name"
+              />
+            </div>
+            <div class="form-row">
+              <label for="email" class="form-label">Email*</label>
+              <input
+                class="form-control"
+                type="email"
+                name="email"
+                required
+                id="email"
+              />
+            </div>
+            <div class="form-row">
+              <label for="message" class="form-label">Wiadomość*</label>
+              <textarea
+                class="form-control"
+                name="message"
+                required
+                id="message"
+              ></textarea>
+            </div>
+            <input
+              type="checkbox"
+              name="legal"
+              id="legal"
+              class="signup_checbox"
+              value="legal"
+              autocomplete="off"
+              required
+            />
+            <p class="label_paragraph">
+              Oświadczam iż akceptuję&nbsp
+
+              <a
+                class="modal__legal-link"
+                target="_blank"
+                href="politykaprywatnosci.html"
+                >Politykę Prywatności</a
+              >
+            </p>
+            <div class="form-message"></div>
+            <div class="form-row">
+              <button type="submit" class="button form-submit">Wyślij</button>
+            </div>
+          </form>
+        </fieldset>
+      </div>
+      <div class="form-bar">
+        <p class="form-bar_text">formularz kontaktowy</p>
       </div>
     </main>
     <footer>

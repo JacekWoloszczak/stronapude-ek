@@ -60,7 +60,7 @@ a:hover {
   background-color: #ebaf77;
   color: #171616;
 }
-@media (min-width: 1800px) {
+@media screen and (min-width: 1800px) {
   .logo_nav_container {
     margin-top: 2.5%;
   }
@@ -165,7 +165,7 @@ a:hover {
 }
 
 .logo_google {
-  width: 70%;
+  width: 60%;
 }
 
 .slaider {
@@ -434,7 +434,10 @@ a:hover {
   background-color: #ebaf77;
   color: black;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+.form-bar_text {
+  cursor: pointer;
 }
 .form_bar_link {
   color: black;
@@ -472,4 +475,133 @@ a:hover {
 }
 .linkedin_icon_footer {
   margin-bottom: -5%;
+}
+/* =========================Formularz kontaktowy na zakładkach================================================= */
+
+.backdrop_formular-contact {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), #ebaf77);
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+}
+.fieldset_contact-form {
+  background-color: #fff;
+  width: 47%;
+  margin: 5rem auto;
+  position: relative;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.form_exit-btn {
+  background-color: inherit;
+  border: none;
+  position: absolute;
+  top: 0%;
+  right: 1%;
+  cursor: pointer;
+}
+
+.form {
+  font-family: sans-serif;
+  max-width: 80%;
+}
+
+.form .form-row {
+  margin-bottom: 1rem;
+}
+
+.form .form-row:last-child {
+  margin-bottom: 0;
+}
+
+.form-control {
+  font-family: sans-serif;
+  padding: 0.8rem;
+  border: 1px solid #bbb;
+  display: block;
+  width: 100%;
+  color: #666;
+}
+
+.form-control:is(textarea) {
+  height: 10rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-submit {
+  margin-top: 3%;
+  font-family: sans-serif;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  background: black;
+  border: 0;
+  border-radius: 0.2rem;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: 0.3s background-color;
+}
+
+@media screen and (max-width: 500px) {
+  .form-submit {
+    display: block;
+    width: 100%;
+  }
+}
+
+.form-send-error {
+  font-family: sans-serif;
+  color: red;
+  margin: 10px 0;
+}
+
+.form-send-success {
+  font-family: sans-serif;
+  color: red;
+  margin: 10px 0;
+}
+
+.form-send-success {
+  color: inherit;
+}
+
+.form-send-success strong {
+  display: block;
+  font-size: 1.5em;
+  color: tomato;
+  margin-bottom: 0.3em;
+}
+.signup_checbox {
+  position: absolute;
+  top: 77%;
+  left: 2%;
+}
+
+.label_paragraph {
+  position: absolute;
+  top: 73.6%;
+  left: 5%;
+}
+@media screen and (min-width: 1800px) {
+  .label_paragraph {
+    top: 72.5%;
+    left: 3.5%;
+  }
+  .signup_checbox {
+    top: 76%;
+    left: 1.5%;
+  }
+}
+.modal__legal-link {
+  text-decoration: none;
+  color: #171616;
 }

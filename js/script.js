@@ -94,3 +94,14 @@ const resetInterval = () => {
 };
 rightBtn.addEventListener("click", handleRightButton);
 leftBtn.addEventListener("click", handleLeftButton);
+
+const openForm = document.querySelector(".form-bar_text");
+const backdrop = document.querySelector(".backdrop_formular-contact");
+const formButtonExit = document.querySelector(".form_exit-btn");
+openForm.addEventListener("click", (e) => {
+  backdrop.style.display = "block";
+});
+
+formButtonExit.addEventListener("click", (e) => {
+  backdrop.style.display = "none";
+});
