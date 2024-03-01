@@ -483,14 +483,14 @@ a:hover {
   position: fixed;
   top: 0;
   left: 0;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), #ebaf77);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), black);
   width: 100%;
   height: 100%;
   z-index: 20;
 }
 .fieldset_contact-form {
   background-color: #fff;
-  width: 47%;
+  width: 40%;
   margin: 5rem auto;
   position: relative;
   padding-top: 2%;
@@ -505,9 +505,8 @@ a:hover {
   cursor: pointer;
 }
 
-.form {
+.form-container {
   font-family: sans-serif;
-  max-width: 80%;
 }
 
 .form .form-row {
