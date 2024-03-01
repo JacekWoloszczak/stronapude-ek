@@ -105,3 +105,96 @@ openForm.addEventListener("click", (e) => {
 formButtonExit.addEventListener("click", (e) => {
   backdrop.style.display = "none";
 });
+// ==============================FORMULARZ==================================
+const form = document.querySelector("#contactForm");
+const fields = form.querySelectorAll("[required]");
+const formMessage = form.querySelector(".form-message");
+
+form.setAttribute("novalidate", true);
+
+for (const field of fields) {
+  field.addEventListener("input", () =>
+    field.classList.toggle("is-invalid", !field.checkValidity())
+  );
+}
+
+function showSubmitSuccess() {
+  const div = document.createElement("div");
+  div.classList.add("form-send-success");
+  form.after(div);
+  div.innerHTML = `
+      <strong>Wiadomość została wysłana</strong>
+      <span>Dziękujemy za kontakt. Postaramy się odpowiedzieć jak najszybciej</span>
+  `;
+  form.remove();
+}
+function checkRequiredFields() {
+  let formErrors = false;
+
+  for (const field of fields) {
+    if (!el.checkValidity()) {
+      field.classList.add("form-error");
+      formErrors = true;
+    } else {
+      field.classList.remove("form-error");
+    }
+  }
+
+  return formErrors;
+}
+
+async function makeRequest(data) {
+  const res = await fetch(url, {
+    method: "post",
+    body: data,
+  });
+  if (res.ok) {
+    return res.json();
+  }
+  return Promise.reject(`${res.status}: ${res.statusText}`);
+}
+function showSubmitError() {
+  formMessage.innerHTML = "Wysłanie wiadomości się nie powiodło";
+}
+
+function afterSubmit(res) {
+  if (res.errors) {
+    const selectors = res.errors.map((el) => `[name="${el}"]`);
+    const fieldsWithErrors = form.querySelectorAll(selectors.join(","));
+    for (const field of fieldsWithErrors) {
+      field.classList.add("is-invalid");
+    }
+  } else {
+    if (res.status === "success") {
+      showSubmitSuccess();
+    }
+    if (res.status === "error") {
+      showSubmitError(res.status);
+    }
+  }
+}
+async function submitForm(e) {
+  let formErrors = checkRequiredFields();
+
+  if (!formErrors) {
+    const formData = new FormData(form);
+
+    const submit = form.querySelector(".form-submit");
+    submit.disabled = true;
+    submit.classList.add("loading");
+    try {
+      const response = await makeRequest(formData);
+      afterSubmit(response);
+    } catch (err) {
+      showSubmitError();
+    }
+
+    submit.disabled = false;
+    submit.classList.remove("loading");
+  }
+}
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  submitForm();
+});
