@@ -24,12 +24,18 @@ body {
   left: 0;
   z-index: 11;
 }
+@media screen and (min-width: 300px) and (max-width: 376px) {
+  .bar_top_container {
+    display: none;
+  }
+}
 .we_are_here {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 8%;
 }
+
 .span_we_are_here:hover {
   color: #ebaf77;
   cursor: pointer;
@@ -45,6 +51,7 @@ body {
   align-items: center;
   gap: 30px;
 }
+
 a {
   text-decoration: none;
   color: white;
@@ -59,6 +66,12 @@ a:hover {
   margin-top: 3%;
   background-color: #ebaf77;
   color: #171616;
+}
+@media screen and (min-width: 300px) and (max-width: 376px) {
+  .logo_nav_container {
+    width: 100%;
+    margin-top: 0%;
+  }
 }
 @media screen and (min-width: 1800px) {
   .logo_nav_container {
@@ -83,6 +96,12 @@ a:hover {
   font-size: larger;
   margin-right: 55%;
 }
+@media screen and (min-width: 300px) and (max-width: 376px) {
+  .navigation {
+    display: none;
+  }
+}
+
 .navigation_link {
   text-decoration: none;
   color: #171616;
@@ -95,6 +114,11 @@ a:hover {
   display: flex;
   box-shadow: 2px 2px 2px grey;
 }
+@media screen and (min-width: 300px) and (max-width: 376px) {
+  .hero_header {
+    box-shadow: none;
+  }
+}
 .img_hero_header {
   width: 100%;
   display: flex;
@@ -102,6 +126,11 @@ a:hover {
   align-items: center;
   background-color: #fff8f8;
   position: relative;
+}
+@media screen and (min-width: 300px) and (max-width: 376px) {
+  .span_animated {
+    display: none;
+  }
 }
 .experiance {
   position: absolute;
@@ -151,8 +180,18 @@ a:hover {
 
   padding: 5% 0;
 }
+@media screen and (min-width: 300px) and (max-width: 376px) {
+  .google_opinion-slaider {
+    flex-direction: column;
+  }
+}
 .google_opinion-wrapper {
   width: 50%;
+}
+@media screen and (min-width: 300px) and (max-width: 376px) {
+  .google_opinion-wrapper {
+    width: 100%;
+  }
 }
 .google_opinion-slaider-bar {
   /* background-color: #dbad81; */
@@ -173,12 +212,23 @@ a:hover {
   width: 60%;
   margin-left: 10%;
 }
-
+@media screen and (min-width: 300px) and (max-width: 376px) {
+  .logo_google {
+    width: 95%;
+    margin-left: 0%;
+  }
+}
 .slaider {
   width: 80%;
   overflow: hidden;
   position: relative;
 }
+@media screen and (min-width: 300px) and (max-width: 376px) {
+  .slaider {
+    width: 95%;
+  }
+}
+
 .slaider_opinion {
   display: flex;
   width: 100%;
@@ -194,6 +244,7 @@ a:hover {
   object-fit: cover;
   /* margin-left: 3%; */
 }
+
 .slaider_btn_left {
   position: absolute;
   top: 20%;
@@ -204,6 +255,11 @@ a:hover {
   border: none;
   font-size: 2em;
   cursor: pointer;
+}
+@media screen and (min-width: 300px) and (max-width: 376px) {
+  .slaider_btn_left {
+    padding: 0.5em 0.1em;
+  }
 }
 .slaider_btn_right {
   position: absolute;
@@ -216,6 +272,11 @@ a:hover {
   font-size: 2em;
   cursor: pointer;
 }
+@media screen and (min-width: 300px) and (max-width: 376px) {
+  .slaider_btn_right {
+    padding: 0.5em 0.1em;
+  }
+}
 .benefit_cooperation_container {
   width: 50%;
 
@@ -224,7 +285,11 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
-
+@media screen and (min-width: 300px) and (max-width: 376px) {
+  .benefit_cooperation_container {
+    width: 100%;
+  }
+}
 .benefit_list {
   list-style-type: none;
   font-size: 1.8em;
@@ -235,6 +300,17 @@ a:hover {
   font-weight: 400;
   font-style: normal;
 }
+@media screen and (min-width: 300px) and (max-width: 376px) {
+  .benefit_list {
+    display: flex;
+    font-size: 1.2em;
+    line-height: 2;
+    margin-bottom: 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .benefit_item {
   cursor: pointer;
 }
@@ -244,11 +320,7 @@ a:hover {
 .benefit_item:hover::before {
   content: url("../assets/check_icon.png");
 }
-.div_image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .benefit_img {
   width: 100%;
   object-fit: cover;
@@ -260,8 +332,29 @@ a:hover {
   justify-content: space-around;
   align-items: center;
 }
+@media screen and (min-width: 300px) and (max-width: 376px) {
+  .picture_container {
+    width: 100%;
+  }
+  .picture_list {
+    width: 100%;
+    align-self: stretch;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .picture__list-items {
   box-shadow: 2px 2px 2px grey;
+}
+@media screen and (min-width: 300px) and (max-width: 376px) {
+  .picture__list-items {
+    box-shadow: none;
+  }
+  .picture__overlay img {
+    width: 100%;
+    height: 200px;
+  }
 }
 .picture__overlay {
   position: relative;
@@ -288,6 +381,14 @@ a:hover {
   font-size: 18px;
   line-height: 1.55;
   padding: 49px;
+}
+@media screen and (min-width: 300px) and (max-width: 376px) {
+  .picture__description {
+    font-size: 13px;
+    line-height: 1;
+    font-weight: none;
+    padding: 29px;
+  }
 }
 .wrapper_map_container {
   display: none;
@@ -341,6 +442,11 @@ a:hover {
 .home_h1 {
   font-size: 2.05em;
   text-align: center;
+}
+@media screen and (min-width: 300px) and (max-width: 376px) {
+  .home_h1 {
+    font-size: 1.5em;
+  }
 }
 .primary_container_wrapper {
   display: flex;
@@ -474,7 +580,13 @@ a:hover {
   justify-content: space-between;
   align-items: center;
 }
-.footer_of_page-address {
+@media screen and (min-width: 300px) and (max-width: 376px) {
+  .footer_of_page {
+    padding-bottom: 0%;
+    flex-direction: column;
+  }
+}
+.footer_of_page .footer_of_page-address {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -496,6 +608,21 @@ a:hover {
 }
 .linkedin_icon_footer {
   margin-bottom: -5%;
+}
+@media screen and (min-width: 300px) and (max-width: 376px) {
+  .text-visit_gmc-footer {
+    flex-direction: column;
+    font-size: 13px;
+  }
+  .web_icon_footer {
+    margin-bottom: -5%;
+  }
+  .linkedin_icon_footer {
+    margin-bottom: -5%;
+  }
+  .text-visit-footer {
+    font-size: 13px;
+  }
 }
 /* =========================Formularz kontaktowy na zakładkach================================================= */
 
@@ -624,4 +751,9 @@ a:hover {
 .modal__legal-link {
   text-decoration: none;
   color: #171616;
+}
+.is-invalid {
+  border-color: red;
+  outline: none;
+  box-shadow: 0 0 2px red;
 }

@@ -2,11 +2,11 @@ const container = document.querySelector(".span_we_are_here");
 const hideMap = document.querySelector(".wrapper_map_container");
 const allItems = document.querySelectorAll("div");
 
-const hide = (e) => {
-  container.addEventListener("click", () => {
-    hideMap.classList.toggle("is-visibility");
-  });
-};
+// const hide = (e) => {
+//   container.addEventListener("click", () => {
+//     hideMap.classList.toggle("is-visibility");
+//   });
+// };
 
 function windowsClose() {
   hideMap.classList.remove("is-visibility");

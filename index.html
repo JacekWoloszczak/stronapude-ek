@@ -126,7 +126,12 @@
               width="1200"
               height="430"
             />
-
+            <source
+              srcset="assets/baner-pudelka.png"
+              media="(min-width:300px) and (max-width: 376px)"
+              width="300"
+              height="100"
+            />
             <img src="assets/baner-pudelka.png" alt=" obraz z pudełkami" />
           </picture>
         </div>
@@ -312,13 +317,27 @@
         </div>
       </div>
       <div class="div_image">
-        <img
-          class="benefit_img"
-          src="assets/ZOT-uścisk-dłoni.jpeg"
-          width="1300"
-          height="300"
-          alt="pudełka ułożone obok siebie"
-        />
+        <picture>
+          <source
+            srcset="assets/ZOT-uścisk-dłoni.jpeg"
+            media="(min-width:1999px) and (max-width: 4001px)"
+            width="1300"
+            height="300"
+          />
+          <source
+            srcset="assets/ZOT-uścisk-dłoni.jpeg"
+            media="(min-width:300px) and (max-width: 376px)"
+            width="300"
+            height="200"
+          />
+          <img
+            class="benefit_img"
+            src="assets/ZOT-uścisk-dłoni.jpeg"
+            width="1300"
+            height="300"
+            alt="uścisk dłoni"
+          />
+        </picture>
       </div>
       <div class="backdrop_formular-contact">
         <fieldset class="fieldset_contact-form">
