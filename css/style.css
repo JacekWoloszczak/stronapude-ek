@@ -514,11 +514,19 @@ a:hover {
 .ofert-link {
   color: inherit;
 }
+.slaider_cards-mobile {
+  display: none;
+}
 .slaider_cards {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 300px) and (max-width: 376px) {
+  .slaider_cards {
+    display: none;
+  }
 }
 .card.active {
   flex: 5;
