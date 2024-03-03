@@ -211,3 +211,19 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   submitForm();
 });
+
+// ==========================MOBILE================================
+
+(() => {
+  const menuOverlay = document.querySelector(".header__menu-mobile");
+  const closeMenuButton = document.querySelector(".header__exit-btn");
+  const openMenuBtn = document.querySelector(".header__mobile-btn");
+  openMenuBtn.addEventListener("click", (e) => {
+    menuOverlay.classList.remove("d-none");
+    openMenuBtn.style.display = "none";
+  });
+  closeMenuButton.addEventListener("click", (e) => {
+    menuOverlay.classList.add("d-none");
+    openMenuBtn.style.display = "block";
+  });
+})();

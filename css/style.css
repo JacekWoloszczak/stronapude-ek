@@ -338,7 +338,7 @@ a:hover {
   }
   .picture_list {
     width: 100%;
-    align-self: stretch;
+
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -582,7 +582,7 @@ a:hover {
 }
 @media screen and (min-width: 300px) and (max-width: 376px) {
   .footer_of_page {
-    padding-bottom: 0%;
+    padding-bottom: 3%;
     flex-direction: column;
   }
 }
@@ -756,4 +756,91 @@ a:hover {
   border-color: red;
   outline: none;
   box-shadow: 0 0 2px red;
+}
+/* ==============================================MOBILE========================================================================= */
+
+.mobile_navigation {
+  display: none;
+}
+
+.header__mobile-btn {
+  display: none;
+}
+.header__exit-btn {
+  display: none;
+}
+.header__navigation-hamburger {
+  display: none;
+}
+.d-none {
+  display: none;
+}
+.page-header__exit-icon {
+  fill: white;
+}
+.header__navigation-icon {
+  fill: white;
+}
+@media screen and (min-width: 300px) and (max-width: 376px) {
+  .d-none {
+    display: none;
+  }
+  .mobile_navigation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+  }
+  .header__navigation-hamburger {
+    display: flex;
+    position: relative;
+  }
+  .header__navigation-hamburger {
+    position: absolute;
+    top: 5%;
+    right: 2%;
+  }
+  .header__mobile-btn {
+    display: block;
+    background-color: inherit;
+    border: none;
+  }
+
+  .header__menu-mobile {
+    background-color: #171616;
+    position: absolute;
+    z-index: 10;
+    padding: 10% 0;
+    width: 100%;
+  }
+  .header__mobile-list {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 15px;
+    list-style-type: none;
+  }
+  .header__mobile-list a {
+    color: inherit;
+  }
+  .header__list-item {
+    margin-top: 15px;
+  }
+  .social_icon_modal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10%;
+  }
+  .header__exit-btn {
+    display: flex;
+    background-color: #ebaf77;
+    border: none;
+    position: absolute;
+    top: -20%;
+    right: 2%;
+  }
 }
