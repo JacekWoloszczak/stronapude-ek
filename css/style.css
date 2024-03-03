@@ -334,7 +334,10 @@ a:hover {
 }
 @media screen and (min-width: 300px) and (max-width: 376px) {
   .picture_container {
-    width: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .picture_list {
     width: 100%;
