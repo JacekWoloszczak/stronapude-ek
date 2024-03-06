@@ -232,8 +232,7 @@ const acordeonBtn = document.querySelectorAll(".acordeon_btn");
 const acordeonText = document.querySelectorAll(".acordeon_info");
 const acordeonH2 = document.querySelectorAll(".header_h2");
 const acordeonDiv = document.querySelectorAll(".acordeon_div");
-console.log(acordeonBtn);
-console.log(acordeonText);
+const acordeonIcons = document.querySelectorAll(".icon-acordeon-plus");
 
 function openAcordeonInfo() {
   closeAcordeonInfo();

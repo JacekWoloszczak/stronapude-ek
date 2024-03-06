@@ -660,6 +660,11 @@ a:hover {
   padding-top: 2%;
   padding-bottom: 2%;
 }
+@media screen and (min-width: 300px) and (max-width: 376px) {
+  .fieldset_contact-form {
+    width: 80%;
+  }
+}
 .form_exit-btn {
   background-color: inherit;
   border: none;
@@ -711,12 +716,12 @@ a:hover {
   color: #fff;
   font-size: 1.1rem;
   font-weight: bold;
-  transition: 0.3s background-color;
+  margin-top: 10%;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 300px) and (max-width: 376px) {
   .form-submit {
-    display: block;
+    margin-top: 30%;
     width: 100%;
   }
 }
@@ -751,19 +756,29 @@ a:hover {
 
 .label_paragraph {
   position: absolute;
-  top: 74%;
+  top: 73%;
   left: 5%;
+  font-size: 13px;
 }
 @media screen and (min-width: 1800px) {
   .label_paragraph {
-    top: 72.5%;
+    top: 73%;
     left: 3.5%;
-  }
-  .signup_checbox {
-    top: 76%;
-    left: 1.5%;
+    font-size: 15px;
   }
 }
+@media screen and (min-width: 300px) and (max-width: 376px) {
+  .label_paragraph {
+    font-size: 11px;
+    top: 74%;
+    left: 7%;
+  }
+}
+.signup_checbox {
+  top: 76%;
+  left: 1.5%;
+}
+
 .modal__legal-link {
   text-decoration: none;
   color: #171616;
@@ -796,6 +811,9 @@ a:hover {
 }
 .header__navigation-icon {
   fill: white;
+}
+.acordeon_mobile {
+  display: none;
 }
 @media screen and (min-width: 300px) and (max-width: 376px) {
   .d-none {
