@@ -567,6 +567,11 @@ a:hover {
 .primary_container_content {
   width: 50%;
 }
+@media screen and (min-width: 300px) and (max-width: 376px) {
+  .primary_container_content {
+    display: none;
+  }
+}
 .form-bar {
   background-color: #ebaf77;
   color: black;
@@ -853,5 +858,44 @@ a:hover {
     position: absolute;
     top: -20%;
     right: 2%;
+  }
+  .acordeon_mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    color: #171616;
+  }
+  .acordeon_box {
+    width: 100%;
+    margin-top: 10%;
+  }
+  .acordeon_btn {
+    border: none;
+    background-color: #ebaf77;
+    color: white;
+    border-radius: 2px;
+    width: 100%;
+    position: relative;
+
+    padding: 30px 30px;
+  }
+  .icon-acordeon-plus {
+    fill: white;
+  }
+  .acordeon_icon {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+  }
+  .acordeon_div {
+    display: none;
+  }
+  .header_h2 {
+    text-align: center;
+  }
+  .acordeon_info {
+    margin: 0 0.5em;
   }
 }

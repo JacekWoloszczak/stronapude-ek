@@ -227,3 +227,23 @@ form.addEventListener("submit", (e) => {
     openMenuBtn.style.display = "block";
   });
 })();
+const acordeonBox = document.querySelectorAll(".acordeon_box");
+const acordeonBtn = document.querySelectorAll(".acordeon_btn");
+const acordeonText = document.querySelectorAll(".acordeon_info");
+const acordeonH2 = document.querySelectorAll(".header_h2");
+const acordeonDiv = document.querySelectorAll(".acordeon_div");
+console.log(acordeonBtn);
+console.log(acordeonText);
+
+function openAcordeonInfo() {
+  closeAcordeonInfo();
+  this.nextElementSibling.style.display = "block";
+}
+
+const closeAcordeonInfo = () => {
+  acordeonDiv.forEach((item) => (item.style.display = "none"));
+};
+const acordeonNextSibling = () => {};
+acordeonBtn.forEach((btn) => {
+  btn.addEventListener("click", openAcordeonInfo);
+});
