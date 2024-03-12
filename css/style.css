@@ -1,9 +1,7 @@
 body {
   font-family: inherit;
 }
-.is-hidden {
-  display: none;
-}
+
 .primer_top_container {
   width: 100%;
 }
@@ -349,10 +347,12 @@ a:hover {
 }
 .picture__list-items {
   box-shadow: 2px 2px 2px grey;
+  width: 30%;
 }
 @media screen and (min-width: 300px) and (max-width: 376px) {
   .picture__list-items {
     box-shadow: none;
+    width: 100%;
   }
   .picture__overlay img {
     width: 100%;
@@ -407,9 +407,7 @@ a:hover {
 
   z-index: 10;
 }
-.is-visibility {
-  display: block;
-}
+
 .map {
   margin-left: 10px;
 }
@@ -882,7 +880,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
+    width: 100%;
     color: #171616;
   }
   .acordeon_box {
@@ -902,6 +900,9 @@ a:hover {
   .icon-acordeon-plus {
     fill: white;
   }
+  .icon-acordeon-minus {
+    fill: white;
+  }
   .acordeon_icon {
     position: absolute;
     top: 40%;
@@ -909,6 +910,7 @@ a:hover {
   }
   .acordeon_div {
     display: none;
+    width: 90%;
   }
   .header_h2 {
     text-align: center;
@@ -917,4 +919,13 @@ a:hover {
     margin: 0 0.5em;
     line-height: 2;
   }
+}
+.is-hidden {
+  display: none;
+}
+.is-visibility {
+  display: block;
+}
+.is-visible {
+  display: block;
 }

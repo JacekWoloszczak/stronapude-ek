@@ -232,17 +232,28 @@ const acordeonBtn = document.querySelectorAll(".acordeon_btn");
 const acordeonText = document.querySelectorAll(".acordeon_info");
 const acordeonH2 = document.querySelectorAll(".header_h2");
 const acordeonDiv = document.querySelectorAll(".acordeon_div");
-const acordeonIcons = document.querySelectorAll(".icon-acordeon-plus");
-
+const acordeonIconsPlus = document.querySelectorAll(".icon-acordeon-plus");
+const acordeonIconsMinus = document.querySelectorAll(".icon-acordeon-minus");
 function openAcordeonInfo() {
-  closeAcordeonInfo();
-  this.nextElementSibling.style.display = "block";
+  if (this.nextElementSibling.classList.contains("is-visible")) {
+    this.nextElementSibling.classList.remove("is-visible");
+    acordeonIconsPlus.forEach((plus) => plus.classList.toggle("is-hidden"));
+    acordeonIconsMinus.forEach((minus) =>
+      minus.classList.contains("is-hidden")
+    );
+  } else {
+    closeAcordeonInfo();
+    this.nextElementSibling.classList.add("is-visible");
+    acordeonIconsPlus.forEach((plus) => plus.classList.add("is-hidden"));
+
+    acordeonIconsMinus.forEach((minus) => minus.classList.remove("is-hidden"));
+  }
 }
 
 const closeAcordeonInfo = () => {
-  acordeonDiv.forEach((item) => (item.style.display = "none"));
+  acordeonDiv.forEach((item) => item.classList.remove("is-visible"));
 };
-const acordeonNextSibling = () => {};
+
 acordeonBtn.forEach((btn) => {
   btn.addEventListener("click", openAcordeonInfo);
 });
