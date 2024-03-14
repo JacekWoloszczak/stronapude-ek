@@ -72,43 +72,7 @@ function removeActiveClass() {
     panel.classList.remove("active");
   });
 }
-
-let index = 0;
-
-const handleSlaider = () => {
-  index++;
-  changeContent();
-};
-let start = setInterval(handleSlaider, slaiderSpeed);
-const changeContent = () => {
-  if (index > slaiderContent.length - 1) {
-    index = 0;
-  } else if (index < 0) {
-    index = slaiderContent.length - 1;
-  }
-
-  slaiderBox.style.transform = `translateX(${index * slaiderWidth}%)`;
-};
-
-const handleRightButton = () => {
-  index++;
-
-  resetInterval();
-};
-const handleLeftButton = () => {
-  index--;
-
-  resetInterval();
-};
-
-const resetInterval = () => {
-  changeContent();
-  clearInterval(start);
-  start = setInterval(handleSlaider, slaiderSpeed);
-};
-rightBtn.addEventListener("click", handleRightButton);
-leftBtn.addEventListener("click", handleLeftButton);
-
+const spanOpenFormular = document.querySelector(".open_formular");
 const openForm = document.querySelector(".form-bar_text");
 const backdrop = document.querySelector(".backdrop_formular-contact");
 const formButtonExit = document.querySelector(".form_exit-btn");
@@ -119,10 +83,13 @@ openForm.addEventListener("click", (e) => {
 formButtonExit.addEventListener("click", (e) => {
   backdrop.style.display = "none";
 });
+
 // ==============================FORMULARZ==================================
+
 const form = document.querySelector("#contactForm");
 const fields = form.querySelectorAll("[required]");
 const formMessage = form.querySelector(".form-message");
+
 const url = "send-script.php";
 form.setAttribute("novalidate", true);
 
@@ -149,7 +116,7 @@ function checkRequiredFields() {
   let formErrors = false;
 
   for (const field of fields) {
-    if (!el.checkValidity()) {
+    if (!field.checkValidity()) {
       field.classList.add("form-error");
       formErrors = true;
     } else {
@@ -227,6 +194,7 @@ form.addEventListener("submit", (e) => {
     openMenuBtn.style.display = "block";
   });
 })();
+
 const acordeonBox = document.querySelectorAll(".acordeon_box");
 const acordeonBtn = document.querySelectorAll(".acordeon_btn");
 const acordeonText = document.querySelectorAll(".acordeon_info");
@@ -256,4 +224,7 @@ const closeAcordeonInfo = () => {
 
 acordeonBtn.forEach((btn) => {
   btn.addEventListener("click", openAcordeonInfo);
+});
+spanOpenFormular.addEventListener("click", () => {
+  backdrop.style.display = "block";
 });

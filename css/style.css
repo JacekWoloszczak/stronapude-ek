@@ -22,9 +22,14 @@ body {
   left: 0;
   z-index: 11;
 }
-@media screen and (min-width: 300px) and (max-width: 376px) {
+@media screen and (max-width: 767px) {
   .bar_top_container {
     display: none;
+  }
+}
+@media screen and (min-width: 2100px) {
+  .bar_top_container {
+    padding-bottom: 0.5%;
   }
 }
 .we_are_here {
@@ -63,9 +68,10 @@ a:hover {
   align-items: center;
   margin-top: 3%;
   background-color: #ebaf77;
+  padding-top: 1%;
   color: #171616;
 }
-@media screen and (min-width: 300px) and (max-width: 376px) {
+@media screen and (max-width: 376px) {
   .logo_nav_container {
     width: 100%;
     margin-top: 0%;
@@ -74,6 +80,7 @@ a:hover {
 @media screen and (min-width: 1800px) {
   .logo_nav_container {
     margin-top: 2.5%;
+    padding-top: 0.5%;
   }
 }
 
@@ -167,7 +174,7 @@ a:hover {
   }
 }
 .span_animated::before {
-  content: url("../assets/check_icon.png");
+  content: url("../assets/check-icon.png");
 }
 .google_opinion-slaider {
   display: flex;
@@ -316,7 +323,7 @@ a:hover {
   color: red;
 }
 .benefit_item:hover::before {
-  content: url("../assets/check_icon.png");
+  content: url("../assets/check-icon.png");
 }
 
 .benefit_img {
@@ -652,7 +659,7 @@ a:hover {
 }
 .fieldset_contact-form {
   background-color: #fff;
-  width: 40%;
+  width: 50%;
   margin: 5rem auto;
   position: relative;
   padding-top: 2%;
@@ -704,7 +711,6 @@ a:hover {
 }
 
 .form-submit {
-  margin-top: 3%;
   font-family: sans-serif;
   padding: 1rem 2rem;
   cursor: pointer;
@@ -928,4 +934,89 @@ a:hover {
 }
 .is-visible {
   display: block;
+}
+/* ========================OFERTA================================================= */
+#canvas {
+  width: 100%;
+}
+.box_FAQ_wapper {
+  padding: 5%;
+}
+.list_FAQ {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  /* align-self: stretch;
+  justify-self: stretch; */
+}
+.list_FAQ-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100px;
+  box-shadow: 2px 2px 2px grey;
+}
+.anchor_FAQ {
+  color: #171616;
+}
+.offer-container {
+  padding-bottom: 5%;
+}
+.text-offer {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #171616;
+  text-align: left;
+  padding: 1% 3%;
+  margin: 0 auto;
+}
+.head-h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+.FAQ_question {
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: bold;
+}
+.anchor_contact {
+  color: red;
+}
+.open_formular {
+  color: red;
+  cursor: pointer;
+}
+.gallery {
+  width: 100%;
+
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.gallery_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  list-style-type: none;
+}
+.gallery_list-item {
+  width: 30%;
+  height: 300px;
+  box-shadow: 2px 2px 2px grey;
+}
+@media screen and (max-width: 376px) {
+  .gallery_list-item {
+    width: 90%;
+    height: 300px;
+    box-shadow: 2px 2px 2px grey;
+  }
+}
+.head_3 {
+  font-size: 1.7rem;
+  text-align: center;
+  padding-bottom: 5%;
 }
