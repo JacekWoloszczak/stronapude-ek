@@ -14,5 +14,8 @@
 <symbol id="icon-minus" viewBox="0 0 32 32">
 <path d="M0 13v6c0 0.552 0.448 1 1 1h30c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1h-30c-0.552 0-1 0.448-1 1z"></path>
 </symbol>
+<symbol id="icon-quill" viewBox="0 0 32 32">
+<path d="M0 32c4-12 14.469-32 32-32-8.219 6.594-12 22-18 22s-6 0-6 0l-6 10h-2z"></path>
+</symbol>
 </defs>
 </svg>

@@ -129,10 +129,13 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff8f8;
+  background-color: #bbbbbb;
   position: relative;
 }
 @media screen and (min-width: 300px) and (max-width: 376px) {
+  .img_hero_header {
+    background-color: #fff8f8;
+  }
   .span_animated {
     display: none;
   }
@@ -165,7 +168,7 @@ a:hover {
 
 @keyframes animated-span {
   0% {
-    transform: translateX(-100px);
+    transform: translateX(-90px);
     opacity: 0;
   }
   100% {
@@ -173,9 +176,7 @@ a:hover {
     opacity: 1;
   }
 }
-.span_animated::before {
-  content: url("../assets/check-icon.png");
-}
+
 .google_opinion-slaider {
   display: flex;
 
@@ -450,6 +451,7 @@ a:hover {
 .home_h1 {
   font-size: 2.05em;
   text-align: center;
+  padding: 5% 0%;
 }
 @media screen and (min-width: 300px) and (max-width: 376px) {
   .home_h1 {
@@ -530,6 +532,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 5% 0%;
 }
 @media screen and (min-width: 300px) and (max-width: 376px) {
   .slaider_cards {
