@@ -72,7 +72,7 @@ function removeActiveClass() {
     panel.classList.remove("active");
   });
 }
-const spanOpenFormular = document.querySelector(".open_formular");
+
 const openForm = document.querySelector(".form-bar_text");
 const backdrop = document.querySelector(".backdrop_formular-contact");
 const formButtonExit = document.querySelector(".form_exit-btn");
@@ -224,7 +224,4 @@ const closeAcordeonInfo = () => {
 
 acordeonBtn.forEach((btn) => {
   btn.addEventListener("click", openAcordeonInfo);
-});
-spanOpenFormular.addEventListener("click", () => {
-  backdrop.style.display = "block";
 });
