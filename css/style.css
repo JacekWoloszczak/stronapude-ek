@@ -948,9 +948,13 @@ a:hover {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  /* align-self: stretch;
-  justify-self: stretch; */
 }
+@media screen and (max-width: 376px) {
+  .list_FAQ {
+    margin-right: 10%;
+  }
+}
+
 .list_FAQ-items {
   display: flex;
   align-items: center;
@@ -1019,4 +1023,23 @@ a:hover {
   font-size: 1.7rem;
   text-align: center;
   padding-bottom: 5%;
+}
+.navigation_link_about_us {
+  display: flex;
+  color: #171616;
+  width: 150%;
+  margin-right: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+.navigation_link_about_us:hover {
+  color: #171616;
+}
+.galery_img {
+  width: 100%;
+  object-fit: cover;
+}
+.text-offer-telephone-anchor {
+  color: #171616;
+  font-weight: bold;
 }
