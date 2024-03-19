@@ -665,7 +665,7 @@ a:hover {
   width: 50%;
   margin: 5rem auto;
   position: relative;
-  padding-top: 2%;
+  padding-top: 5%;
   padding-bottom: 2%;
 }
 @media screen and (min-width: 300px) and (max-width: 376px) {
@@ -677,7 +677,7 @@ a:hover {
   background-color: inherit;
   border: none;
   position: absolute;
-  top: 0%;
+  top: 2%;
   right: 1%;
   cursor: pointer;
 }
@@ -1028,6 +1028,10 @@ a:hover {
   box-shadow: 2px 2px 2px grey;
 }
 @media screen and (max-width: 376px) {
+  .gallery_list {
+    flex-direction: column;
+    margin-right: 10%;
+  }
   .gallery_list-item {
     width: 90%;
     height: 300px;
@@ -1061,5 +1065,64 @@ a:hover {
 }
 .text-offer-telephone-anchor {
   color: #171616;
+  font-weight: bold;
+}
+
+/* ==============================PUBLIKACJE================================================= */
+
+.publication_wrapper {
+  display: flex;
+}
+.publication_main-container {
+  flex: 3;
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: 20%;
+  margin-left: 5%;
+}
+
+.publication_div {
+  width: 300px;
+  cursor: pointer;
+}
+.publication-aside-container {
+  flex: 1;
+  border: 2px solid black;
+  border-right: none;
+  border-bottom: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 376px) {
+  .publication_main-container {
+    gap: 0%;
+    display: flex;
+    flex-direction: column;
+  }
+  .publication_div {
+    margin-top: 5%;
+  }
+  .publication-aside-container {
+    display: none;
+  }
+}
+.publication_aside-logo {
+  margin-left: 15%;
+}
+.publication_list {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 100px;
+  font-size: larger;
+  margin-bottom: 100px;
+}
+.publication-paragraph {
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: center;
   font-weight: bold;
 }
