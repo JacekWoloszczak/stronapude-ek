@@ -1103,6 +1103,7 @@ a:hover {
   }
   .publication_div {
     margin-top: 5%;
+    color: black;
   }
   .publication-aside-container {
     display: none;
@@ -1125,4 +1126,44 @@ a:hover {
   line-height: 1.8;
   text-align: center;
   font-weight: bold;
+}
+.h2_publication {
+  color: black;
+}
+.h2_publication:hover {
+  color: #ebaf77;
+}
+
+.hero_img {
+  width: 300px;
+  margin: 0 auto;
+}
+.article {
+  display: flex;
+  flex-direction: column;
+}
+.h2_article {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.h3_article {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.article_paragraph {
+  font-size: 18px;
+  line-height: 1.6;
+  padding: 2% 5%;
+}
+.order_list_in_article {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20%;
+  line-height: 1.6;
+}
+@media screen and (max-width: 376px) {
+  .order_list_in_article {
+    margin-left: 0%;
+  }
 }
