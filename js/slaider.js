@@ -1,3 +1,8 @@
+const slaiderBox = document.querySelector(".slaider_opinion");
+const slaiderContent = document.querySelectorAll(".slaider_content");
+const slaiderWidth = 100;
+const slaiderSpeed = 5000;
+
 let index = 0;
 
 const handleSlaider = () => {

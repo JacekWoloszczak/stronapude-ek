@@ -237,20 +237,20 @@ a:hover {
 
 .slaider_opinion {
   display: flex;
+
   width: 100%;
   transform: translateX(0);
   transition: transform 0.5s;
 }
-.slaider_content {
-  overflow-y: hidden;
-}
-.slaider_img {
+
+.slaider_img-tekst-1 {
   width: 100%;
   height: 30%;
-  object-fit: cover;
-  /* margin-left: 3%; */
 }
-
+.slaider_img-tekst-2 {
+  width: 100%;
+  height: 30%;
+}
 .slaider_btn_left {
   position: absolute;
   top: 20%;
@@ -1170,4 +1170,7 @@ a:hover {
   .order_list_in_article {
     margin-left: 0%;
   }
+}
+.asd {
+  width: 1000px;
 }

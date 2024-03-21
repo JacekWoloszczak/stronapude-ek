@@ -25,15 +25,12 @@ const paragraph = document.querySelector(".content_welcome");
 const paragraphLorem = document.querySelector(".content_lorem");
 const headerContentWelcome = document.querySelector(".head_content_welcome-h2");
 const headerContent = document.querySelector(".head_content-h2");
-const slaiderBox = document.querySelector(".slaider_opinion");
-const slaiderContent = document.querySelectorAll(".slaider_content");
+
 const leftBtn = document.querySelector(".slaider_btn_left");
 const rightBtn = document.querySelector(".slaider_btn_right");
 const first = document.querySelector(".one");
 const second = document.querySelector(".two");
 const third = document.querySelector(".three");
-const slaiderWidth = 100;
-const slaiderSpeed = 5000;
 
 panels.forEach((panel, index) => {
   panel.addEventListener("click", () => {
