@@ -1105,6 +1105,7 @@ a:hover {
     gap: 0%;
     display: flex;
     flex-direction: column;
+    margin-left: 10%;
   }
   .publication_div {
     margin-top: 5%;
