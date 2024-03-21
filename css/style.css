@@ -298,7 +298,7 @@ a:hover {
 
 @media screen and (min-width: 300px) and (max-width: 376px) {
   .benefit_cooperation_container {
-    background-size: cover;
+    height: 200px;
     background-position: center;
   }
 }
@@ -321,6 +321,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: black;
   }
 }
 /* .benefit_item {
