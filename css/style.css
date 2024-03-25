@@ -638,6 +638,9 @@ a:hover {
 .linkedin_icon_footer {
   margin-bottom: -5%;
 }
+.footer_menu {
+  display: none;
+}
 @media screen and (min-width: 300px) and (max-width: 376px) {
   .text-visit_gmc-footer {
     flex-direction: column;
@@ -651,6 +654,56 @@ a:hover {
   }
   .text-visit-footer {
     font-size: 13px;
+  }
+  .footer_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer_menu-list {
+    list-style-type: none;
+    color: white;
+  }
+  .footer_menu-list-item-visible {
+    display: block;
+
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 1%;
+    width: 200px;
+    position: relative;
+  }
+  .footer_menu-list-item-visible > a {
+    margin-left: 10%;
+    color: white;
+  }
+  .footer_menu-list-item {
+    display: none;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 1%;
+    width: 200px;
+    margin-top: 5px;
+  }
+  .footer_menu-list-item > a {
+    margin-left: 10%;
+    color: white;
+  }
+  .footer_menu-svg {
+    position: absolute;
+    right: 10px;
+    fill: red;
+  }
+  .footer_svg-hide {
+    display: none;
+  }
+  .footer_menu-list:last-child {
+    position: relative;
+  }
+  .footer_menu-list:last-child > .footer_menu-svg-end {
+    position: absolute;
+    right: 10px;
+    fill: red;
   }
 }
 /* =========================Formularz kontaktowy na zakładkach================================================= */
@@ -768,8 +821,8 @@ a:hover {
 
 .label_paragraph {
   position: absolute;
-  top: 73%;
-  left: 5%;
+  top: 73.5%;
+  left: 4%;
   font-size: 13px;
 }
 @media screen and (min-width: 1800px) {
