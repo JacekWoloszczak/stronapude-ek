@@ -211,3 +211,23 @@ const closeAcordeonInfo = () => {
 acordeonBtn.forEach((btn) => {
   btn.addEventListener("click", openAcordeonInfo);
 });
+// ========================FOOTER============================
+
+const openFooterMenu = document.querySelector(".footer_menu-list-item-visible");
+const footerMenu = document.querySelectorAll(".footer_menu-list-item");
+const svgOpen = document.querySelector(".footer_menu-svg-open");
+const svgExit = document.querySelector(".footer_svg-hide");
+openFooterMenu.addEventListener("click", () => {
+  footerMenu.forEach((el) => {
+    el.classList.add("is-visible");
+  });
+  svgOpen.style.display = "none";
+  svgExit.style.display = "block";
+});
+svgExit.addEventListener("click", () => {
+  svgOpen.style.display = "block";
+  svgExit.style.display = "none";
+  footerMenu.forEach((el) => {
+    el.classList.remove("is-visible");
+  });
+});
