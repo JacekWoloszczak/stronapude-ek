@@ -229,6 +229,10 @@ const openFooterMenu = document.querySelector(".footer_menu-list-item-visible");
 const footerMenu = document.querySelectorAll(".footer_menu-list-item");
 const svgOpen = document.querySelector(".footer_menu-svg-open");
 const svgExit = document.querySelector(".footer_svg-hide");
+const footerDiv = document.querySelector(".footer_of_page");
+const footerUl = document.querySelector(".footer_menu-list");
+const footerMenuDiv = document.querySelector(".footer_menu");
+
 openFooterMenu.addEventListener("click", () => {
   footerMenu.forEach((el) => {
     el.classList.add("is-visible");
