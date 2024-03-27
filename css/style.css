@@ -71,14 +71,31 @@ a:hover {
   padding-top: 1%;
   color: #171616;
 }
+.logo_nav_container-fefco {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3%;
+  background-color: #f3c17e;
+  padding-top: 1%;
+  color: #171616;
+}
 @media screen and (max-width: 376px) {
   .logo_nav_container {
+    width: 100%;
+    margin-top: 0%;
+  }
+  .logo_nav_container-fefco {
     width: 100%;
     margin-top: 0%;
   }
 }
 @media screen and (min-width: 1800px) {
   .logo_nav_container {
+    margin-top: 2.5%;
+    padding-top: 0.5%;
+  }
+  .logo_nav_container-fefco {
     margin-top: 2.5%;
     padding-top: 0.5%;
   }
@@ -132,8 +149,21 @@ a:hover {
   background-color: #bbbbbb;
   position: relative;
 }
+.img_hero_header-fefco {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #7abec9;
+  filter: brightness(70%);
+}
+
 @media screen and (min-width: 300px) and (max-width: 376px) {
   .img_hero_header {
+    background-color: #fff8f8;
+  }
+  .img_hero_header-fefco {
     background-color: #fff8f8;
   }
   .span_animated {
@@ -1293,6 +1323,7 @@ a:hover {
   padding: 5% 0%;
 }
 .text-article_policy {
+  padding: 3% 3%;
   font-size: 18px;
   line-height: 2.1;
 }
@@ -1300,6 +1331,7 @@ a:hover {
   text-align: center;
   font-size: 30px;
   color: black;
+  padding: 3% 0%;
 }
 .link-mainpage {
   color: black;
