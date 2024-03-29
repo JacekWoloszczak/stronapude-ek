@@ -1561,8 +1561,8 @@ a:hover {
     margin-top: 10%;
   }
   .acordeon_btn {
-    border: none;
-    background-color: #ebaf77;
+    border: 2px solid #ebaf77;
+    background-color: #171616;
     color: white;
     border-radius: 2px;
     width: 100%;
@@ -1668,8 +1668,8 @@ a:hover {
     margin-top: 10%;
   }
   .acordeon_btn {
-    border: none;
-    background-color: #ebaf77;
+    border: 2px solid #ebaf77;
+    background-color: #171616;
     color: white;
     border-radius: 2px;
     width: 100%;
