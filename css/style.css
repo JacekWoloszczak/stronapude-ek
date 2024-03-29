@@ -16,7 +16,7 @@ body {
   align-items: center;
   background-color: #171616;
   color: white;
-  max-width: 100%;
+
   width: 100%;
   position: fixed;
   top: 0;
@@ -101,6 +101,26 @@ a:hover {
   .logo_nav_container-fefco {
     width: 100%;
     margin-top: 0%;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 767px) {
+  .logo_nav_container {
+    width: 100%;
+    margin-top: 0%;
+  }
+  .logo_nav_container-fefco {
+    width: 100%;
+    margin-top: 0%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .logo_nav_container {
+    margin-top: 6%;
+    padding-top: 0.5%;
+  }
+  .logo_nav_container-fefco {
+    margin-top: 6%;
+    padding-top: 0.5%;
   }
 }
 @media screen and (min-width: 1800px) {
@@ -392,6 +412,12 @@ a:hover {
     background-position: center;
   }
 }
+@media screen and (min-width: 426px) and (max-width: 767px) {
+  .benefit_cooperation_container {
+    height: 220px;
+    background-position: center;
+  }
+}
 .benefit_list {
   list-style-type: none;
   font-size: 1.8em;
@@ -426,7 +452,18 @@ a:hover {
     color: black;
   }
 }
-
+@media screen and (min-width: 426px) and (max-width: 767px) {
+  .benefit_list {
+    display: flex;
+    font-size: 1.2em;
+    line-height: 2;
+    margin-bottom: 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+}
 /* .benefit_item {
   cursor: pointer;
 } */
@@ -440,6 +477,13 @@ a:hover {
   object-fit: cover;
   object-position: center;
 }
+.picture_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .picture_list {
   list-style-type: none;
   display: flex;
@@ -476,15 +520,16 @@ a:hover {
     flex-direction: column;
   }
 }
-@media screen and (min-width: 427px) and (max-width: 1024px) {
+@media screen and (min-width: 427px) and (max-width: 767px) {
   .picture_container {
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .picture_list {
     width: 100%;
+
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -505,6 +550,36 @@ a:hover {
   }
 }
 @media screen and (min-width: 377px) and (max-width: 426px) {
+  .picture__list-items {
+    box-shadow: none;
+    width: 100%;
+  }
+  .picture__overlay img {
+    width: 100%;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 427px) and (max-width: 767px) {
+  .picture__list-items {
+    box-shadow: none;
+    width: 100%;
+  }
+  .picture__overlay img {
+    width: 100%;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .picture__list-items {
+    box-shadow: none;
+    width: 100%;
+  }
+  .picture__overlay img {
+    width: 100%;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
   .picture__list-items {
     box-shadow: none;
     width: 100%;
@@ -691,7 +766,11 @@ a:hover {
     display: none;
   }
 }
-
+@media screen and (min-width: 426px) and (max-width: 767px) {
+  .slaider_cards {
+    display: none;
+  }
+}
 .card.active {
   flex: 5;
 }
@@ -734,6 +813,11 @@ a:hover {
   }
 }
 @media screen and (min-width: 377px) and (max-width: 426px) {
+  .primary_container_content {
+    display: none;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 767px) {
   .primary_container_content {
     display: none;
   }
@@ -1474,6 +1558,113 @@ a:hover {
     line-height: 2;
   }
 }
+@media screen and (min-width: 426px) and (max-width: 767px) {
+  .d-none {
+    display: none;
+  }
+  .mobile_navigation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+  }
+  .header__navigation-hamburger {
+    display: flex;
+    position: relative;
+  }
+  .header__navigation-hamburger {
+    position: absolute;
+    top: 6%;
+    right: 3%;
+  }
+  .header__mobile-btn {
+    display: block;
+    background-color: inherit;
+    border: none;
+  }
+
+  .header__menu-mobile {
+    background-color: #171616;
+    position: absolute;
+    z-index: 10;
+    padding: 10% 0;
+    width: 100%;
+  }
+  .header__mobile-list {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 15px;
+    list-style-type: none;
+  }
+  .header__mobile-list a {
+    color: inherit;
+  }
+  .header__list-item {
+    margin-top: 15px;
+  }
+  .social_icon_modal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10%;
+  }
+  .header__exit-btn {
+    display: flex;
+    background-color: #ebaf77;
+    border: none;
+    position: absolute;
+    top: -20%;
+    right: 2%;
+  }
+  .acordeon_mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #171616;
+  }
+  .acordeon_box {
+    width: 100%;
+    margin-top: 10%;
+  }
+  .acordeon_btn {
+    border: none;
+    background-color: #ebaf77;
+    color: white;
+    border-radius: 2px;
+    width: 100%;
+    position: relative;
+
+    padding: 30px 30px;
+  }
+  .icon-acordeon-plus {
+    fill: white;
+  }
+  .icon-acordeon-minus {
+    fill: white;
+  }
+  .acordeon_icon {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+  }
+  .acordeon_div {
+    display: none;
+    width: 90%;
+  }
+  .header_h2 {
+    text-align: center;
+  }
+  .acordeon_info {
+    margin: 0 0.5em;
+    line-height: 2;
+  }
+}
 /* ========================OFERTA================================================= */
 #canvas {
   width: 100%;
@@ -1676,6 +1867,16 @@ a:hover {
 .publication_aside-logo {
   margin-left: 15%;
 }
+@media screen and (min-width: 427px) and (max-width: 1023px) {
+  .publication-aside-container {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .publication_div {
+    width: 200px;
+  }
+}
 .publication_list {
   margin-top: 100px;
   display: flex;
@@ -1793,7 +1994,7 @@ a:hover {
   height: 872px;
 }
 
-@media screen and (min-width: 300px) and (max-width: 376px) {
+@media screen and (min-width: 300px) and (max-width: 767px) {
   .fefco_img {
     width: 300px;
     height: 572px;
