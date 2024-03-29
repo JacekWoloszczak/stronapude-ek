@@ -702,7 +702,7 @@ a:hover {
 }
 @media screen and (min-width: 300px) and (max-width: 376px) {
   .home_h1 {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 }
 .primary_container_wrapper {
@@ -1447,8 +1447,8 @@ a:hover {
     margin-top: 10%;
   }
   .acordeon_btn {
-    border: none;
-    background-color: #ebaf77;
+    border: 2px solid #ebaf77;
+    background-color: #171616;
     color: white;
     border-radius: 2px;
     width: 100%;
