@@ -236,8 +236,9 @@ a:hover {
 @media screen and (min-width: 300px) and (max-width: 376px) {
   .img_hero_header-contact {
     height: 150px;
-    background-size: inherit;
-    background-position: center;
+    background-size: cover;
+    background-position: left;
+    background-attachment: local;
   }
 }
 @media screen and (min-width: 377px) and (max-width: 426px) {
@@ -252,6 +253,9 @@ a:hover {
   }
   .img_hero_header-contact {
     height: 150px;
+    background-size: cover;
+    background-position: left;
+    background-attachment: local;
   }
 }
 @media screen and (min-width: 427px) and (max-width: 1439px) {
