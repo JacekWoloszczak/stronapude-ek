@@ -303,43 +303,58 @@ a:hover {
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding: 5% 0;
   /* margin-left: 8%; */
   /* padding: 5% 0; */
 }
+
 @media screen and (min-width: 300px) and (max-width: 376px) {
   .google_opinion-slaider {
     flex-direction: column;
     margin-left: 1%;
+    width: 100%;
   }
 }
 @media screen and (min-width: 377px) and (max-width: 426px) {
   .google_opinion-slaider {
     flex-direction: column;
     margin-left: 1%;
+    width: 100%;
   }
 }
 .google_opinion-wrapper {
-  width: 50%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (min-width: 300px) and (max-width: 376px) {
   .google_opinion-wrapper {
     width: 100%;
+    flex-direction: column;
   }
 }
 @media screen and (min-width: 377px) and (max-width: 426px) {
   .google_opinion-wrapper {
     width: 100%;
     margin-left: 0;
+    flex-direction: column;
   }
 }
 @media screen and (min-width: 427px) and(max-width: 767px) {
   .google_opinion-wrapper {
     width: 100%;
     margin-left: 0%;
+    flex-direction: column;
   }
 }
-
-.google_opinion-slaider-bar {
+@media screen and (min-width: 768px) and(max-width: 1439) {
+  .google_opinion-wrapper {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+.benefits-bar {
   /* background-color: #dbad81; */
   width: 100%;
   margin-top: -2%;
@@ -395,7 +410,7 @@ a:hover {
   position: absolute;
   top: 20%;
   left: 0%;
-  padding: 0.9em 0.3em;
+  padding: 0.3em 0.3em;
   color: white;
   background-color: rgba(0, 0, 0, 0.4);
   border: none;
@@ -411,7 +426,7 @@ a:hover {
   position: absolute;
   top: 20%;
   right: 0;
-  padding: 0.9em 0.3em;
+  padding: 0.3em 0.3em;
   color: white;
   background-color: rgba(0, 0, 0, 0.4);
   border: none;
@@ -458,7 +473,7 @@ a:hover {
   list-style-type: none;
   font-size: 1.8em;
   line-height: 3;
-
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
   color: white;
   font-family: monospace;
   font-weight: 400;
@@ -474,6 +489,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     color: black;
+    text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em white;
   }
 }
 @media screen and (min-width: 377px) and (max-width: 426px) {
@@ -915,7 +931,7 @@ a:hover {
     flex-direction: column;
   }
 }
-@media screen and (min-width: 427px) and (max-width: 1024px) {
+@media screen and (min-width: 427px) and (max-width: 1240px) {
   .footer_of_page {
     padding-bottom: 3%;
     flex-direction: column;
@@ -948,20 +964,21 @@ a:hover {
 
 .footer_menu {
   display: flex;
-  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
 
   position: absolute;
-  left: 40%;
+
   bottom: 3%;
   background-color: #171616;
 }
 .footer_menu-list {
   list-style-type: none;
   color: white;
+  display: flex;
 }
 .footer_menu-list-item-visible {
-  display: block;
-
   border: 2px solid white;
   border-radius: 25px;
   padding: 1%;
@@ -973,12 +990,11 @@ a:hover {
   color: white;
 }
 .footer_menu-list-item {
-  display: none;
   border: 2px solid white;
   border-radius: 25px;
   padding: 1%;
   width: 200px;
-  margin-top: 5px;
+  margin-left: 2%;
 }
 .footer_menu-list-item > a {
   margin-left: 10%;
@@ -1025,6 +1041,7 @@ a:hover {
   .footer_menu-list {
     list-style-type: none;
     color: white;
+    display: block;
   }
   .footer_menu-list-item-visible {
     display: block;
@@ -1046,6 +1063,7 @@ a:hover {
     padding: 1%;
     width: 200px;
     margin-top: 5px;
+    margin-left: 0%;
   }
   .footer_menu-list-item > a {
     margin-left: 10%;
@@ -1091,6 +1109,7 @@ a:hover {
   .footer_menu-list {
     list-style-type: none;
     color: white;
+    display: block;
   }
   .footer_menu-list-item-visible {
     display: block;
@@ -1112,6 +1131,7 @@ a:hover {
     padding: 1%;
     width: 200px;
     margin-top: 5px;
+    margin-left: 0%;
   }
   .footer_menu-list-item > a {
     margin-left: 10%;
@@ -1158,6 +1178,7 @@ a:hover {
   .footer_menu-list {
     list-style-type: none;
     color: white;
+    display: block;
   }
   .footer_menu-list-item-visible {
     display: block;
@@ -1179,6 +1200,7 @@ a:hover {
     padding: 1%;
     width: 200px;
     margin-top: 5px;
+    margin-left: 0%;
   }
   .footer_menu-list-item > a {
     margin-left: 10%;
@@ -1199,6 +1221,83 @@ a:hover {
     position: absolute;
     right: 10px;
     fill: red;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1240px) {
+  .text-visit_gmc-footer {
+    flex-direction: column;
+    font-size: 13px;
+  }
+  .web_icon_footer {
+    margin-bottom: -5%;
+  }
+  .linkedin_icon_footer {
+    margin-bottom: -5%;
+  }
+  .text-visit-footer {
+    font-size: 13px;
+  }
+
+  .footer_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: static;
+  }
+  .footer_menu-list {
+    list-style-type: none;
+    color: white;
+    display: block;
+  }
+  .footer_menu-list-item-visible {
+    display: block;
+
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 1%;
+    width: 200px;
+    position: relative;
+  }
+  .footer_menu-list-item-visible > a {
+    margin-left: 10%;
+    color: white;
+  }
+  .footer_menu-list-item {
+    display: none;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 1%;
+    width: 200px;
+    margin-top: 5px;
+    margin-left: 0%;
+  }
+  .footer_menu-list-item > a {
+    margin-left: 10%;
+    color: white;
+  }
+  .footer_menu-svg {
+    position: absolute;
+    right: 10px;
+    fill: red;
+  }
+  .footer_svg-hide {
+    display: none;
+  }
+  .footer_menu-list:last-child {
+    position: relative;
+  }
+  .footer_menu-svg-end {
+    position: absolute;
+    right: 10px;
+    fill: red;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .footer_menu-svg {
+    display: none;
+  }
+  .footer_svg-hide {
+    display: none;
   }
 }
 .div_image > img {
@@ -1748,13 +1847,24 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  border-radius: 50px;
+  color: white;
+  background-color: #171616;
+  border: 3px solid #ebaf77;
   width: 30%;
   height: 100px;
   box-shadow: 2px 2px 2px grey;
+  align-self: stretch;
+  justify-self: stretch;
+}
+@media screen and (max-width: 767px) {
+  .list_FAQ-items {
+    border-radius: 0;
+    padding: 0 12%;
+  }
 }
 .anchor_FAQ {
-  color: #171616;
+  color: white;
 }
 .offer-container {
   padding-top: 5%;
