@@ -327,11 +327,17 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding-right: 2%;
 }
 @media screen and (min-width: 300px) and (max-width: 376px) {
   .google_opinion-wrapper {
     width: 100%;
     flex-direction: column;
+    border: none;
+    border-radius: 0px;
+    padding-right: 0%;
   }
 }
 @media screen and (min-width: 377px) and (max-width: 426px) {
@@ -339,19 +345,29 @@ a:hover {
     width: 100%;
     margin-left: 0;
     flex-direction: column;
+    border: none;
+    border-radius: 0px;
+    padding-right: 0%;
   }
 }
-@media screen and (min-width: 427px) and(max-width: 767px) {
+@media screen and (min-width: 427px) and (max-width: 767px) {
   .google_opinion-wrapper {
     width: 100%;
     margin-left: 0%;
     flex-direction: column;
+    border: none;
+    border-radius: 0px;
+    padding-right: 0%;
   }
 }
-@media screen and (min-width: 768px) and(max-width: 1439) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   .google_opinion-wrapper {
     width: 100%;
     margin-left: 0%;
+    flex-direction: column;
+    border: none;
+    border-radius: none;
+    padding-right: 0%;
   }
 }
 .benefits-bar {
