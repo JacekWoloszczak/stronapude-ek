@@ -559,13 +559,6 @@ a:hover {
     color: black;
   }
 }
-/* .benefit_item {
-  cursor: pointer;
-} */
-
-/* .benefit_item:hover::before {
-  content: url("../assets/check-icon.png");
-} */
 
 .benefit_img {
   width: 100%;
