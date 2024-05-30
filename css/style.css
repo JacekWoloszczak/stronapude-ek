@@ -1475,44 +1475,41 @@ a:hover {
   margin-bottom: 0.3em;
 }
 .signup_checbox {
-  position: absolute;
-  top: 78%;
-  left: 2%;
+  display: flex;
 }
-
+.form-check {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3%;
+}
 .label_paragraph {
-  position: absolute;
-  top: 73.5%;
-  left: 4%;
   font-size: 13px;
+  color: #171616;
 }
 @media screen and (min-width: 1800px) {
   .label_paragraph {
-    top: 73%;
-    left: 3.5%;
+    /* top: 73%;
+    left: 3.5%; */
     font-size: 15px;
   }
 }
 @media screen and (min-width: 300px) and (max-width: 376px) {
   .label_paragraph {
     font-size: 11px;
-    top: 74%;
-    left: 7%;
+    /* top: 74%;
+    left: 7%; */
   }
 }
 @media screen and (min-width: 377px) and (max-width: 426px) {
   .label_paragraph {
     font-size: 11px;
-    top: 73.8%;
-    left: 8%;
+    /* top: 73.8%;
+    left: 8%; */
   }
 }
-.signup_checbox {
-  top: 76%;
-  left: 1.5%;
-}
 
-.modal__legal-link {
+.modal_legal-link {
   text-decoration: none;
   color: #171616;
 }
