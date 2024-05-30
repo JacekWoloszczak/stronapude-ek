@@ -26,8 +26,6 @@ const paragraphLorem = document.querySelector(".content_lorem");
 const headerContentWelcome = document.querySelector(".head_content_welcome-h2");
 const headerContent = document.querySelector(".head_content-h2");
 
-const leftBtn = document.querySelector(".slaider_btn_left");
-const rightBtn = document.querySelector(".slaider_btn_right");
 const first = document.querySelector(".one");
 const second = document.querySelector(".two");
 const third = document.querySelector(".three");

@@ -1,3 +1,5 @@
+const leftBtn = document.querySelector(".slaider_btn_left");
+const rightBtn = document.querySelector(".slaider_btn_right");
 const slaiderBox = document.querySelector(".slaider_opinion");
 const slaiderContent = document.querySelectorAll(".slaider_content");
 const slaiderWidth = 100;
@@ -9,15 +11,16 @@ const handleSlaider = () => {
   index++;
   changeContent();
 };
-let start = setInterval(handleSlaider, slaiderSpeed);
+let startSlaider = setInterval(handleSlaider, slaiderSpeed);
 const changeContent = () => {
-  if (index > slaiderContent.length - 1) {
+  if (index >= 3) {
     index = 0;
-  } else if (index < 0) {
-    index = slaiderContent.length - 1;
+  }
+  if (index < 0) {
+    index = 0;
   }
 
-  slaiderBox.style.transform = `translateX(${index * slaiderWidth}%)`;
+  slaiderBox.style.transform = `translateX(${-index * slaiderWidth}%)`;
 };
 
 const handleRightButton = () => {
@@ -33,8 +36,8 @@ const handleLeftButton = () => {
 
 const resetInterval = () => {
   changeContent();
-  clearInterval(start);
-  start = setInterval(handleSlaider, slaiderSpeed);
+  clearInterval(startSlaider);
+  startSlaider = setInterval(handleSlaider, slaiderSpeed);
 };
 rightBtn.addEventListener("click", handleRightButton);
 leftBtn.addEventListener("click", handleLeftButton);

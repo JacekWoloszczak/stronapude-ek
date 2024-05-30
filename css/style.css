@@ -1,7 +1,11 @@
 body {
   font-family: inherit;
 }
-
+/* @media screen and (min-width: 1800px) {
+  p {
+    font-size: auto;
+  }
+} */
 .primer_top_container {
   width: 100%;
 }
@@ -327,7 +331,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid black;
+
   border-radius: 15px;
   padding-right: 2%;
 }
@@ -415,10 +419,9 @@ a:hover {
 
 .slaider_opinion {
   display: flex;
-
   width: 100%;
-  transform: translateX(0);
-  transition: transform 0.5s;
+  /* transform: translateX(0);
+  transition: transform 0.5s; */
 }
 
 .slaider_img-tekst-1 {
@@ -429,6 +432,11 @@ a:hover {
   width: 100%;
   height: 30%;
 }
+.slaider_img-tekst-3 {
+  width: 100%;
+  height: 30%;
+}
+
 .slaider_btn_left {
   position: absolute;
   top: 20%;
@@ -1873,43 +1881,57 @@ a:hover {
   width: 100%;
 }
 .box_FAQ_wapper {
-  padding: 5%;
-}
-.list_FAQ {
-  list-style-type: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 10%;
+  padding: 5%;
 }
+
 @media screen and (max-width: 376px) {
-  .list_FAQ {
-    margin-right: 10%;
+  .box_FAQ_wapper {
+    flex-direction: column;
   }
 }
 
-.list_FAQ-items {
+.anchor_FAQ {
+  color: black;
+}
+.anchor_FAQ-div {
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50px;
-  color: white;
-  background-color: #171616;
-  border: 3px solid #ebaf77;
-  width: 30%;
+  color: black;
+  background-color: white;
+  border: 1px solid #171616;
+  width: 200px;
   height: 100px;
-  box-shadow: 2px 2px 2px grey;
-  align-self: stretch;
-  justify-self: stretch;
+  box-shadow: 2px 2px 2px #171616;
+
+  cursor: pointer;
+  color: #171616;
 }
-@media screen and (max-width: 767px) {
-  .list_FAQ-items {
-    border-radius: 0;
-    padding: 0 12%;
+
+@media screen and (max-width: 376px) {
+  .anchor_FAQ-div {
+    margin-top: 10%;
   }
 }
-.anchor_FAQ {
-  color: white;
+
+@media screen and (max-width: 767px) {
+  .box_FAQ_wapper {
+    flex-direction: column;
+  }
+  .anchor_FAQ-div {
+    margin-top: 10%;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .anchor_FAQ-div {
+    width: 400px;
+    height: 150px;
+  }
 }
 .offer-container {
   padding-top: 5%;
@@ -2188,10 +2210,10 @@ a:hover {
   flex-direction: column;
 }
 .fefco_button {
-  border: 4px solid #2196f3;
+  border: 2px solid black;
   width: 300px;
-  color: white;
-  background-color: #171616;
+  color: black;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2227,4 +2249,7 @@ a:hover {
 }
 .is-flex {
   display: flex;
+}
+.google_map-contact {
+  width: 100%;
 }
