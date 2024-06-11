@@ -326,7 +326,7 @@ a:hover {
     padding-bottom: 20%;
   }
 }
-@media screen and (min-width: 427px) and (max-width: 768px) {
+@media screen and (min-width: 427px) and (max-width: 1439px) {
   .google_opinion-slaider {
     flex-direction: column;
     width: 100%;
@@ -465,22 +465,17 @@ a:hover {
     padding: 0.3em 0.4em;
   }
 }
-@media screen and (min-width: 1800px) {
-  .slaider_btn_left {
-    padding: 0.9em 0.5em;
-  }
-}
 
-@media screen and (min-width: 377px) and (max-width: 426px) {
+@media screen and (min-width: 377px) and (max-width: 767px) {
   .slaider_btn_left {
     bottom: -15%;
     left: 20%;
     padding: 0.3em 0.4em;
   }
 }
-@media screen and (min-width: 767px) and (max-width: 1235px) {
+@media screen and (min-width: 768px) and (max-width: 1235px) {
   .slaider_btn_left {
-    bottom: -4.5%;
+    bottom: -8%;
     left: 20%;
     padding: 0.2em 0.3em;
   }
@@ -511,16 +506,16 @@ a:hover {
     left: 70%;
   }
 }
-@media screen and (min-width: 377px) and (max-width: 426px) {
+@media screen and (min-width: 377px) and (max-width: 767px) {
   .slaider_btn_right {
     bottom: -15%;
     left: 70%;
     padding: 0.3em 0.4em;
   }
 }
-@media screen and (min-width: 767px) and (max-width: 1235px) {
+@media screen and (min-width: 768px) and (max-width: 1235px) {
   .slaider_btn_right {
-    bottom: -4.5%;
+    bottom: -8%;
     left: 70%;
     padding: 0.2em 0.3em;
   }
