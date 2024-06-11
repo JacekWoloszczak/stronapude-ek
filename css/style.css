@@ -2169,6 +2169,22 @@ a:hover {
     width: 200px;
   }
 }
+
+@media screen and (max-width: 1023px) and (orientation: landscape) {
+  .publication_main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .publication_div {
+    margin-top: 5%;
+    color: black;
+  }
+  .publication-aside-container {
+    display: none;
+  }
+}
 .publication_list {
   margin-top: 100px;
   display: flex;
