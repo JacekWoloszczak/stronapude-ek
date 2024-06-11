@@ -410,7 +410,7 @@ a:hover {
 .slaider {
   width: 100%;
   overflow: hidden;
-  position: relative;
+
   border-radius: 5px;
   box-shadow: 1px 1px 1px 1px #666;
 }
@@ -449,7 +449,7 @@ a:hover {
 }
 .slaider_btn_left {
   position: absolute;
-  bottom: 0.5%;
+  bottom: 1%;
   left: 70%;
   padding: 0.3em 0.3em;
   color: white;
@@ -489,7 +489,7 @@ a:hover {
 }
 .slaider_btn_right {
   position: absolute;
-  bottom: 0.5%;
+  bottom: 1%;
   left: 85%;
 
   padding: 0.3em 0.3em;
