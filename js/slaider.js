@@ -13,7 +13,7 @@ const handleSlaider = () => {
 };
 let startSlaider = setInterval(handleSlaider, slaiderSpeed);
 const changeContent = () => {
-  if (index >= 3) {
+  if (index >= 5) {
     index = 0;
   }
   if (index < 0) {
