@@ -303,7 +303,7 @@ a:hover {
 
 .google_opinion-slaider {
   display: flex;
-  position: relative;
+
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -334,11 +334,11 @@ a:hover {
   }
 }
 .google_opinion-wrapper {
-  width: 80%;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  position: relative;
   border-radius: 15px;
   padding-right: 2%;
 }
@@ -408,9 +408,10 @@ a:hover {
   }
 }
 .slaider {
-  width: 100%;
+  width: 30%;
   overflow: hidden;
-
+  display: block;
+  position: relative;
   border-radius: 5px;
   box-shadow: 1px 1px 1px 1px #666;
 }
@@ -419,7 +420,11 @@ a:hover {
     width: 95%;
   }
 }
-
+@media screen and (min-width: 377px) and (max-width: 1439px) {
+  .slaider {
+    width: 95%;
+  }
+}
 .slaider_opinion {
   display: flex;
   width: 100%;
@@ -447,7 +452,28 @@ a:hover {
   width: 100%;
   height: 30%;
 }
-.slaider_btn_left {
+.slaider_dots {
+  gap: 8%;
+  position: absolute;
+  bottom: 5%;
+  left: 25%;
+
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dots {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px 1px #666;
+  cursor: pointer;
+}
+.dots:hover {
+  background-color: red;
+}
+/* .slaider_btn_left {
   position: absolute;
   bottom: 1%;
   left: 70%;
@@ -526,7 +552,7 @@ a:hover {
     left: 80%;
     padding: 0.6em 0.6em;
   }
-}
+} */
 .benefit_cooperation_container {
   margin-top: 10%;
   width: 100%;
@@ -2317,4 +2343,7 @@ a:hover {
 }
 .google_map-contact {
   width: 100%;
+}
+.red {
+  background-color: red;
 }
