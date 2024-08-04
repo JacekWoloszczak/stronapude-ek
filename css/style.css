@@ -225,8 +225,31 @@ a:hover {
   background-color: #7abec9;
   filter: brightness(70%);
 }
-
+.main_open_container {
+  display: flex;
+  max-height: 300px;
+  padding-bottom: 5%;
+  background-color: rgb(22, 21, 21);
+  color: white;
+}
+.main_open_paragraph {
+  font-size: 15px;
+  line-height: 1.2;
+  text-align: justify;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+.main_open_container > img {
+  margin-right: 2%;
+}
 @media screen and (min-width: 300px) and (max-width: 376px) {
+  .main_open_container {
+    background-color: white;
+    color: black;
+  }
+  .main_open_container > img {
+    display: none;
+  }
   .img_hero_header {
     background-color: #fff8f8;
   }
@@ -246,6 +269,13 @@ a:hover {
   }
 }
 @media screen and (min-width: 377px) and (max-width: 426px) {
+  .main_open_container {
+    background-color: white;
+    color: black;
+  }
+  .main_open_container > img {
+    display: none;
+  }
   .img_hero_header {
     background-color: #fff8f8;
   }
@@ -263,6 +293,21 @@ a:hover {
   }
 }
 @media screen and (min-width: 427px) and (max-width: 1439px) {
+  .main_open_container {
+    display: flex;
+
+    padding-bottom: 100px;
+
+    background-color: white;
+    color: black;
+  }
+  .main_open_paragraph {
+    font-size: 12px;
+    line-height: 1.2;
+    text-align: justify;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
 }
 .experiance {
   position: absolute;
@@ -390,6 +435,9 @@ a:hover {
   font-size: 1.75em;
   text-align: center;
   padding-bottom: 10%;
+  text-shadow: 1px 1px 2px rgb(123, 106, 106), 0 0 1em rgb(136, 136, 195),
+    0 0 0.2em rgb(26, 2, 3);
+  color: white;
 }
 .logo_google {
   width: 80%;
@@ -591,7 +639,6 @@ a:hover {
   }
 } */
 .benefit_cooperation_container {
-  margin-top: 10%;
   width: 100%;
   height: 400px;
   background-attachment: fixed;
@@ -623,10 +670,11 @@ a:hover {
 }
 .benefit_list {
   list-style-type: none;
-  font-size: 1.8em;
+  font-size: 2em;
   line-height: 3;
-  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-  color: white;
+  text-shadow: 1px 1px 2px rgb(123, 106, 106), 0 0 1em rgb(136, 136, 195),
+    0 0 0.2em rgb(26, 2, 3);
+  color: rgb(254, 254, 254);
   font-family: monospace;
   font-weight: 400;
   font-style: normal;
@@ -676,9 +724,11 @@ a:hover {
 }
 .picture_container {
   width: 100%;
+  background: linear-gradient(0.25turn, rgb(170, 146, 97), #ebf8e1, #f69d3c);
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 10%;
 }
 
 .picture_list {
@@ -686,6 +736,7 @@ a:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  cursor: pointer;
 }
 @media screen and (min-width: 300px) and (max-width: 376px) {
   .picture_container {
@@ -693,6 +744,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: white;
   }
   .picture_list {
     width: 100%;
@@ -702,12 +754,14 @@ a:hover {
     flex-direction: column;
   }
 }
+
 @media screen and (min-width: 377px) and (max-width: 426px) {
   .picture_container {
     width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: white;
   }
   .picture_list {
     width: 100%;
@@ -723,6 +777,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: white;
   }
   .picture_list {
     width: 100%;
@@ -738,6 +793,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: white;
   }
   .picture_list {
     width: 100%;
