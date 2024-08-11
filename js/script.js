@@ -22,7 +22,7 @@ window.addEventListener("click", openMap);
 const panels = document.querySelectorAll(".card");
 const text = document.querySelector(".content");
 const paragraph = document.querySelector(".content_welcome");
-const paragraphLorem = document.querySelector(".content_lorem");
+const paragraphLorem = document.querySelector(".content_paragraph");
 const headerContentWelcome = document.querySelector(".head_content_welcome-h2");
 const headerContent = document.querySelector(".head_content-h2");
 

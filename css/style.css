@@ -461,6 +461,7 @@ a:hover {
   display: block;
   position: relative;
   border-radius: 5px;
+
   box-shadow: 1px 1px 1px 1px #666;
   height: 500px;
 }
@@ -969,7 +970,10 @@ a:hover {
 }
 .content {
   display: none;
+  font-size: 18px;
+  line-height: 1.6;
 }
+
 .reveal {
   opacity: 0;
 }
@@ -1011,7 +1015,8 @@ a:hover {
   font-size: 18px;
   line-height: 1.6;
 }
-.content {
+
+.content_paragraph {
   font-size: 18px;
   line-height: 1.6;
 }
@@ -1067,7 +1072,7 @@ a:hover {
   box-shadow: 2px 2px 2px grey;
 }
 .img_card_start {
-  background-image: url("../assets/opakowania-kartonowe.webP");
+  background-image: url("../assets/opakowania-kartonowe-1.webp");
   background-size: cover;
   background-position: 40%;
   background-repeat: no-repeat;
@@ -1228,6 +1233,13 @@ a:hover {
   fill: red;
   cursor: pointer;
 }
+.footer_menu-list-item-visible:hover {
+  background-color: red;
+}
+.footer_menu-list-item:hover {
+  background-color: red;
+}
+
 @media screen and (min-width: 300px) and (max-width: 376px) {
   .text-visit_gmc-footer {
     flex-direction: column;
