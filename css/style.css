@@ -249,8 +249,8 @@ a:hover {
 }
 @media screen and (min-width: 300px) and (max-width: 376px) {
   .main_open_container {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
   }
   .main_open_container > img {
     display: none;
@@ -275,8 +275,8 @@ a:hover {
 }
 @media screen and (min-width: 377px) and (max-width: 426px) {
   .main_open_container {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
   }
   .main_open_container > img {
     display: none;
@@ -297,14 +297,14 @@ a:hover {
     background-attachment: local;
   }
 }
-@media screen and (min-width: 427px) and (max-width: 1439px) {
+@media screen and (min-width: 427px) and (max-width: 844px) {
   .main_open_container {
     display: flex;
 
     padding-bottom: 100px;
 
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
   }
   .main_open_paragraph {
     font-size: 12px;
@@ -312,6 +312,9 @@ a:hover {
     text-align: justify;
     padding-right: 5%;
     padding-left: 5%;
+  }
+  .main_open_container > img {
+    display: none;
   }
 }
 .experiance {
@@ -452,6 +455,14 @@ a:hover {
   .logo_google {
     width: 95%;
     margin-left: 0%;
+    margin-bottom: 10%;
+  }
+}
+@media screen and (min-width: 378px) and (max-width: 1439px) {
+  .logo_google {
+    width: 95%;
+    margin-left: 0%;
+    margin-bottom: 10%;
   }
 }
 @media screen and (min-width: 1800px) {
@@ -476,10 +487,16 @@ a:hover {
     height: 200px;
   }
 }
-@media screen and (min-width: 377px) and (max-width: 1439px) {
+@media screen and (min-width: 377px) and (max-width: 767px) {
   .slaider {
     width: 95%;
     height: 240px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .slaider {
+    width: 95%;
+    height: 460px;
   }
 }
 /* .slaider_opinion {
@@ -750,7 +767,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: white;
+    background: inherit;
   }
   .picture_list {
     width: 100%;
@@ -767,7 +784,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: white;
+    background: inherit;
   }
   .picture_list {
     width: 100%;
@@ -783,7 +800,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: white;
+    background: inherit;
   }
   .picture_list {
     width: 100%;
@@ -799,7 +816,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: white;
+    background: inherit;
   }
   .picture_list {
     width: 100%;
@@ -2102,7 +2119,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1240px) {
   .box_FAQ_wapper {
     flex-direction: column;
   }
