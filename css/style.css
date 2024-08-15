@@ -1,5 +1,6 @@
 body {
   font-family: inherit;
+  background-color: rgb(238, 231, 231);
 }
 /* @media screen and (min-width: 1800px) {
   p {
