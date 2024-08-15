@@ -140,7 +140,7 @@ function afterSubmit(res) {
 }
 async function makeRequest(data) {
   const res = await fetch(url, {
-    method: "post",
+    method: "POST",
     body: data,
   });
   if (res.ok) {
