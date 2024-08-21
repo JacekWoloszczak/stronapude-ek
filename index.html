@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="canonical"
+      href="https://www.zakladopakowanlomianki.pl/index.html"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
@@ -25,6 +29,48 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": ["LocalBusiness"],
+        "name": "Zakład Opakowań Tekturowych",
+        "image": "https://www.zakladopakowanlomianki.pl/images/logo-biale-ZOT.png",
+        "@id": "",
+        "url": "https://www.zakladopakowanlomianki.pl/",
+        "telephone": "22 751 13 70",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rolnicza 66D",
+          "addressLocality": "Łomianki",
+          "postalCode": "05-092",
+          "addressCountry": "PL"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4,8",
+          "reviewCount": "17"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 52.3459051,
+          "longitude": 20.8885958
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <header class="primer_top_container">
@@ -99,7 +145,7 @@
                   >opakowania.lomianki@gmail.com</a
                 >
               </li>
-              <li>pn-sob 8-18</li>
+              <li>pn-pt 8-18</li>
             </ul>
           </div>
         </div>
@@ -215,26 +261,26 @@
           </p>
           <picture>
             <source
-              srcset="assets/otwarte-pudełko.webP"
+              srcset="./assets/otwarte-pudelko.webP"
               media="(min-width:1999px) and (max-width: 4001px)"
               width="430"
               height="430"
             />
             <source
-              srcset="assets/baner-pudelka.webP"
+              srcset="./assets/baner-pudelka.webP"
               media="(min-width:377px) and (max-width: 426px)"
               width="350"
               height="120"
             />
             <source
-              srcset="assets/baner-pudelka.webP"
+              srcset="./assets/baner-pudelka.webP"
               media="(min-width:300px) and (max-width: 376px)"
               width="300"
               height="100"
             />
 
             <img
-              src="assets/otwarte-pudełko.webP"
+              src="./assets/otwarte-pudelko.webP"
               width="400"
               height="400"
               alt=" obraz z pudełkami"
@@ -258,7 +304,7 @@
           rozwijać Twój biznes.
         </p>
         <img
-          src="./assets/duzo-pudełek-lezacych-w-stercie.webP"
+          src="./assets/duzo-pudelek-lezacych-w-stercie.webP"
           width="500"
           height="400"
           alt="recznie robione opakowania tekturowe"
@@ -440,7 +486,7 @@
             <figure class="picture__frame">
               <div class="picture__overlay">
                 <img
-                  src="assets/duzo-pudełek-lezacych-w-stercie.webP"
+                  src="./assets/duzo-pudelek-lezacych-w-stercie.webP"
                   alt="pudełka"
                   width="370"
                   height="294"
@@ -462,7 +508,7 @@
             <figure class="picture__frame">
               <div class="picture__overlay">
                 <img
-                  src="assets/sterta-opakowań-tekturowych.webP"
+                  src="./assets/sterta-opakowan-tekturowych.webP"
                   alt="pudełka"
                   width="370"
                   height="294"
@@ -485,7 +531,7 @@
             <figure class="picture__frame">
               <div class="picture__overlay">
                 <img
-                  src="assets/zdjecie-tektury-ulozonej-jedna-na-drugiej.webP"
+                  src="./assets/zdjecie-tektury-ulozonej-jedna-na-drugiej.webP"
                   alt="zdjęcie pudełka"
                   width="370"
                   height="294"
@@ -519,19 +565,16 @@
         <div class="google_opinion-wrapper">
           <img
             class="logo_google"
-            src="assets/logo-google-z-gwiazdkami.png"
+            src="./assets/logo-google-z-gwiazdkami.png"
             width="720"
             height="525"
             alt="logo Google"
           />
         </div>
+
         <div class="slaider">
           <div class="slider_slide">
             <p class="slaider_img-tekst-1" class="slider_content">
-              <!-- src="assets/tekst-1.webp"
-              width="400"
-              height="120"
-              alt="opinia" -->
               Historia współpracy naszej jest długa, ale pozytywna. Biorę
               pudełka zawsze są solidne i w konkurencyjnych cenach. Polecam.
               <span>Opinia z: ALEO.com</span>
@@ -545,10 +588,6 @@
               Bardzo dziękuje :)
               <span>Jacek W.</span>
             </p>
-            <!-- src="assets/tekst-2.webp"
-              width="400"
-              height="120"
-              alt="opinia" -->
           </div>
           <div class="slider_slide">
             <p class="slaider_img-tekst-3" class="slider_content">
@@ -573,6 +612,9 @@
               >
             </p>
           </div>
+        </div>
+        <div class="slider_position">
+          <button class="slider_nav left-btn"><span>&lt;</span></button>
 
           <div class="slider_pagination">
             <button class="slider_pagination_btn"></button>
@@ -581,15 +623,13 @@
             <button class="slider_pagination_btn"></button>
             <button class="slider_pagination_btn"></button>
           </div>
-          <button class="slider_nav left-btn"><span>&lt;</span></button>
           <button class="slider_nav right-btn"><span>&gt;</span></button>
         </div>
       </div>
-
       <div class="div_image">
         <picture>
           <source
-            srcset="assets/ZOT-uscisk-dloni.webp"
+            srcset="./assets/ZOT-uscisk-dloni.webp"
             media="(min-width:1999px) and (max-width: 4001px)"
             width="1300"
             height="300"
@@ -634,7 +674,7 @@
           <form
             class="form_container"
             id="contactForm"
-            method="post"
+            method="POST"
             action="./send-script.php"
           >
             <div class="form-row">
