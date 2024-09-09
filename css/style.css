@@ -2275,9 +2275,8 @@ a:hover {
 .publication_main-container {
   flex: 3;
   display: flex;
-
+  gap: 25%;
   flex-wrap: wrap;
-  gap: 20%;
 }
 
 .publication_div {
