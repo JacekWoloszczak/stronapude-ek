@@ -2271,10 +2271,11 @@ a:hover {
 .publication_wrapper {
   display: flex;
   margin-left: 5%;
-  flex: 3;
 }
 .publication_main-container {
+  margin-top: 0;
   display: flex;
+  flex: 3;
   gap: 20%;
   flex-wrap: wrap;
 }
