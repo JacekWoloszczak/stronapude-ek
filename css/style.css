@@ -2277,11 +2277,13 @@ a:hover {
   display: flex;
   flex: 3;
   gap: 0% 15%;
+  
 
   flex-wrap: wrap;
 }
 
 .publication_div {
+  
   width: 300px;
   cursor: pointer;
   padding-top: 2%;
@@ -2318,11 +2320,17 @@ a:hover {
     gap: 0%;
     display: flex;
     flex-direction: column;
-    margin-left: 20%;
+    justify-content: center;
+    align-items: center;
+    
   }
+
   .publication_div {
-    margin-top: 5%;
+   
+  
     color: black;
+ 
+   
   }
   .publication-aside-container {
     display: none;

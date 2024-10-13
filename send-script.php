@@ -1,11 +1,29 @@
 <?php
-
-$mailToSend = "opakowania.lomianki@gmail.com";
+$mailToSend = "twoj-email@lorem.pl";
+//klucz pobierzesz ze strony gdzie zakładałeś recaptche
+$secretRecaptchaKey = '6LeA6F4qAAAAAC5n--Tgy7sEn9bEv0O3dzlqf1p5';
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $name = $_POST["name"];
     $email = $_POST["email"];
-    $message = $_POST["message"];
+    $message = $_POST["email"];
+    $antiSpam = $_POST["honey"];
+
+    $errors = Array();
+	$return = Array();
+
+    if (!isset($_POST['token'])) die;
+    $token = $_POST['token'];
+
+    $response = file_get_contents(
+        "https://www.google.com/recaptcha/api/siteverify?secret=$secretRecaptchaKey&response=$token&remoteip=".$_SERVER['REMOTE_ADDR']
+    );
+    $response = json_decode($response);
+
+    if ($response->success === false) {
+        header("Content-Type: application/json");
+        die('{"status": "error"}'); //lub {"status" : "success"} dla zmylenia
+    }
 
     $errors = [];
 	$return = [];

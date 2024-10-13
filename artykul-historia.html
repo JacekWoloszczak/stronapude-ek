@@ -303,9 +303,22 @@
                 >
               </p>
             </div>
+     
             <div class="form-message"></div>
             <div class="form-row">
-              <button type="submit" class="button form-submit">Wyślij</button>
+              <button class="g-recaptcha" style=" font-family: sans-serif;
+              padding: 1rem 2rem;
+              cursor: pointer;
+              background: black;
+              border: 0;
+              border-radius: 0.2rem;
+              color: #fff;
+              font-size: 1.1rem;
+              font-weight: bold;
+              margin-top: 10%;"
+          data-sitekey="6LeA6F4qAAAAACX0vngAj0-iE-23MIh7715TxFGV" 
+          data-callback='onSubmit' 
+          data-action='submit'>Wyślij</button>
             </div>
           </form>
         </fieldset>
@@ -412,5 +425,6 @@
     </footer>
 
     <script src="./js/script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
   </body>
 </html>
