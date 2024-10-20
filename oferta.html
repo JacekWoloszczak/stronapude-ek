@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -331,6 +332,9 @@
           <li class="gallery_list-item">
             <img
               class="galery_img"
+              onclick="openModal();currentSlide(1)" 
+              class="hover-shadow"
+
               src="assets/dwa-pudelka.webP"
               width="300"
               height="300"
@@ -340,6 +344,8 @@
           <li class="gallery_list-item">
             <img
               class="galery_img"
+              onclick="openModal();currentSlide(2)" 
+              class="hover-shadow"
               src="assets/gotowe-pudelka.webP"
               width="300"
               height="300"
@@ -349,6 +355,8 @@
           <li class="gallery_list-item">
             <img
               class="galery_img"
+              onclick="openModal();currentSlide(3)" 
+              class="hover-shadow"
               src="assets/dwa-wykrojniki.webP"
               width="300"
               height="300"
@@ -358,6 +366,8 @@
           <li class="gallery_list-item">
             <img
               class="galery_img"
+              onclick="openModal();currentSlide(4)" 
+              class="hover-shadow"
               src="assets/pudelka-gotowe-realizacje.webP"
               width="300"
               height="300"
@@ -367,6 +377,8 @@
           <li class="gallery_list-item">
             <img
               class="galery_img"
+              onclick="openModal();currentSlide(5)" 
+              class="hover-shadow"
               src="assets/zdjecie-tektury-ulozonej-jedna-na-drugiej.webP"
               width="300"
               height="300"
@@ -376,6 +388,8 @@
           <li class="gallery_list-item">
             <img
               class="galery_img"
+              onclick="openModal();currentSlide(6)" 
+              class="hover-shadow"
               src="assets/pudelko-wzor.webP"
               width="300"
               height="300"
@@ -385,24 +399,30 @@
           <li class="gallery_list-item">
             <img
               class="galery_img"
+              onclick="openModal();currentSlide(7)" 
+              class="hover-shadow"
               src="assets/pudelko-z-uchem.webP"
               width="300"
               height="300"
-              alt="pudełk z uchem"
+              alt="pudełka z uchem"
             />
           </li>
           <li class="gallery_list-item">
             <img
               class="galery_img"
+              onclick="openModal();currentSlide(8)" 
+              class="hover-shadow"
               src="assets/pudelko.webP"
               width="300"
               height="300"
-              alt="pudełkoe"
+              alt="pudełka"
             />
           </li>
           <li class="gallery_list-item">
             <img
               class="galery_img"
+              onclick="openModal();currentSlide(9)" 
+              class="hover-shadow"
               src="assets/sterta-pudelek.webP"
               width="300"
               height="300"
@@ -411,6 +431,59 @@
           </li>
         </ul>
       </div>
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+          
+            <img src="assets/dwa-pudelka.webP" >
+          </div>
+      
+          <div class="mySlides">
+        
+            <img src="assets/gotowe-pudelka.webP" >
+          </div>
+      
+          <div class="mySlides">
+           
+            <img src="assets/dwa-wykrojniki.webP" >
+          </div>
+      
+          <div class="mySlides">
+        
+            <img src="assets/pudelka-gotowe-realizacje.webP" >
+          </div>
+          <div class="mySlides">
+             <img src="assets/zdjecie-tektury-ulozonej-jedna-na-drugiej.webP">
+            </div>
+            <div class="mySlides">
+            <img src="assets/pudelko-wzor.webP" >
+          </div>
+          <div class="mySlides">
+        
+            <img src="assets/pudelko-z-uchem.webP" >
+          </div>
+          <div class="mySlides">
+        
+            <img src="assets/pudelko.webP" >
+          </div>
+          <div class="mySlides">
+        
+            <img src="assets/sterta-pudelek.webP" >
+          </div>
+         
+      
+    
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+         
+      
+       
+      </div>
+      </div>
+      
       <div class="backdrop_formular-contact">
         <fieldset class="fieldset_contact-form">
           <button type="button" title="przycisk wyjścia" class="form_exit-btn">
@@ -597,6 +670,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/lightbox.js"></script>
     <script src="./js/oferta.js"></script>
     <script src="./js/script.js"></script>
     <script src="https://unpkg.com/vb-canvas/dist/vb-canvas.min.js"></script>
